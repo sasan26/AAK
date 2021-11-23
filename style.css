@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:400,600,700,800');
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
 
 
 :root {
@@ -564,18 +564,209 @@ header .hero{
     background-position: center;
 }
 
+header { margin-bottom: 3rem; }
+header .hero .caption{
+    font-family: Poppins;
+    font-weight: 700;
+    color: var(--blue);
+    text-align: center;
+    background-color: var(--formbg);
+    border: 1px solid var(--blue);
+    position: absolute;
+    bottom: -2.7rem;
+    width: 78%;
+    left: 11%;
+    padding: 0;
+    border-radius: 12px;
+    font-size: 1.5rem;
+}
+
 /* main */
 .row-contact span{
     text-align: center;
 }
 
+.row-contact span p{
+    margin: 3rem auto;
+}
+
 .cform {
     background-color: var(--formbg);
-    padding: 2rem;
+    padding: 3rem 4rem 4rem;
     border-radius: 12px;
     width: 70%;
     margin: auto;
+    border: 1px solid var(--blue);
 }
+
+.cform-btn {
+    background-color: var(--blue);;
+    color: white;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 100%;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.cbtns{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    padding: 0 2rem;
+    font-family: Poppins;
+    font-weight: 700;
+    margin-top:0;
+}
+
+.cbtns > div{
+    border: 1px solid var(--blue);
+    background: var(--formbg);
+    border-radius: 12px;
+    padding: 3rem;
+    text-align: center;
+    width: 19rem;
+}
+
+.cbtns > div div:first-child{
+    font-size: 1.5rem;
+}
+
+.cbtns > div div:nth-child(2){
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.map-img{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.map-img img{
+    width:70%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* login */
+.row-login{
+    margin-bottom: 30rem;
+}
+
+.hero-empty{
+    height: 20rem;
+    background-color: var(--white);
+    padding-top: 30rem;
+    margin-bottom: -50px;
+    display: grid;
+    grid-template-columns: auto 40% auto;
+    align-items: center;
+    padding-right: 10rem;
+    padding-left: 10rem;
+}
+
+header .hero-empty .caption{
+    font-family: Poppins;
+    font-weight: 700;
+    color: var(--blue);
+    text-align: center;
+    font-size: 1.5rem; 
+}
+
+.b2{
+    height: 10px;
+    background-image:
+    linear-gradient(
+      to right, 
+      var(--blue), var(--white)
+    );
+}
+.b3{
+    height: 10px;
+    background-image:
+    linear-gradient(
+      to right, 
+      var(--white), var(--blue)
+    );
+}
+
+.lform {
+    padding: 6rem 4rem;
+    border-radius: 12px;
+    width: 30rem;
+    margin: auto;
+    border: 1px solid var(--blue);
+    border-top: 2px solid var(--blue);
+    font-family: Poppins;
+    font-size: 1.3rem;
+}
+
+.lform-btn {
+    background-color: var(--blue);
+    color: white;
+    padding: 15px 1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.lform-google-btn {
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid var(--blue) !important;
+    padding: 15px 1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.lform .box{
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 6rem;
+}
+
+.border{
+    border-bottom: 1px solid #000;
+    width: 10rem;
+}
+
+.lform .space{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 20px;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+}
+
+.lform .space > div{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -636,6 +827,19 @@ header .hero{
         justify-content: space-between !important;
         grid-gap: 0 3rem;
     }
+
+    .cbtns{
+        grid-template-columns: auto;
+        grid-column-gap: 10px;
+        justify-content: center;
+        padding: 0 1rem;
+        grid-row-gap: 10px;
+    }
+
+    .map-img img{
+        width:90%;
+    }
+    
     
 }
 
