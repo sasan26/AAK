@@ -695,7 +695,7 @@ header .hero-empty .caption{
     );
 }
 
-.lform {
+.loginform {
     padding: 6rem 4rem;
     border-radius: 12px;
     width: 30rem;
@@ -706,7 +706,7 @@ header .hero-empty .caption{
     font-size: 1.3rem;
 }
 
-.lform-btn {
+.loginform-btn {
     background-color: var(--blue);
     color: white;
     padding: 15px 1rem;
@@ -718,7 +718,7 @@ header .hero-empty .caption{
     font-size: 16px;
 }
 
-.lform-google-btn {
+.loginform-google-btn {
     background-color: var(--white);
     color: var(--black);
     border: 1px solid var(--blue) !important;
@@ -731,7 +731,7 @@ header .hero-empty .caption{
     font-size: 16px;
 }
 
-.lform .box{
+.loginform .box{
     display: grid;
     grid-template-columns: auto;
     grid-row-gap: 6rem;
@@ -742,7 +742,7 @@ header .hero-empty .caption{
     width: 10rem;
 }
 
-.lform .space{
+.loginform .space{
     display: grid;
     grid-template-columns: auto auto auto;
     grid-column-gap: 20px;
@@ -751,7 +751,7 @@ header .hero-empty .caption{
     align-items: center;
 }
 
-.lform .space > div{
+.loginform .space > div{
     text-align: center;
 }
 
