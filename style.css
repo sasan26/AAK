@@ -41,11 +41,13 @@
 .w50{ width: 50% !important;}
 .w40{ width: 40% !important;}
 
-body{
+html, body {
     margin: 0;
-    background-color: var(--lighblue);
     padding: 0;
-    padding-bottom: 5rem;
+}
+body{
+    background-color: var(--lighblue);
+    /* padding-bottom: 5rem; */
 }
 
 .container-full{
@@ -489,6 +491,10 @@ main.contactus{
 footer{
     background-color: var(--footer);
     font-family: Poppins;
+    /* position:relative;
+       left: 0px;
+       bottom: 0px;
+       width: 100%; */
 
 }
 footer .top{
@@ -654,14 +660,10 @@ header .hero .caption{
 }
 
 /* login */
-.row-login{
-    margin-bottom: 30rem;
-}
 
 .hero-empty{
-    height: 20rem;
     background-color: var(--white);
-    padding-top: 30rem;
+    padding-top: 4rem;
     margin-bottom: -50px;
     display: grid;
     grid-template-columns: auto 40% auto;
@@ -696,10 +698,10 @@ header .hero-empty .caption{
 }
 
 .loginform {
-    padding: 6rem 4rem;
+    padding: 3rem 1rem;
     border-radius: 12px;
     width: 30rem;
-    margin: auto;
+    margin: 4rem auto;
     border: 1px solid var(--blue);
     border-top: 2px solid var(--blue);
     font-family: Poppins;
@@ -716,6 +718,8 @@ header .hero-empty .caption{
     font-family: Poppins;
     font-weight: 600;
     font-size: 16px;
+    width: 80%;
+    margin: auto;
 }
 
 .loginform-google-btn {
@@ -729,24 +733,26 @@ header .hero-empty .caption{
     font-family: Poppins;
     font-weight: 600;
     font-size: 16px;
+    width: 80%;
+    margin: auto;
 }
 
 .loginform .box{
     display: grid;
     grid-template-columns: auto;
-    grid-row-gap: 6rem;
+    grid-row-gap: 2rem;
 }
 
 .border{
     border-bottom: 1px solid #000;
-    width: 10rem;
+    width: 8rem;
 }
 
 .loginform .space{
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-column-gap: 20px;
-    justify-content: space-evenly;
+    grid-column-gap: 40px;
+    justify-content: center;
     justify-items: center;
     align-items: center;
 }
