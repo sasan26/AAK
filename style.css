@@ -37,6 +37,7 @@
 .ml5{ margin-left: 5rem !important;}
 
 .w100{ width: 100% !important;}
+.w80{ width: 80% !important;}
 .w70{ width: 70% !important;}
 .w50{ width: 50% !important;}
 .w40{ width: 40% !important;}
@@ -165,7 +166,8 @@ input[type=submit] {
     font-size: 18px;
 }
 
-input[type=text], input[type=email] {
+input[type=text], input[type=email],
+input[type=password] {
 /* width: 82.5%;  */
 padding: 12px; 
 border: 1px solid #ccc;
@@ -760,6 +762,122 @@ header .hero-empty .caption{
 .loginform .space > div{
     text-align: center;
 }
+
+/* login2 */
+.loginform .box input[type=text], .forgot-link{
+    margin:auto;
+}
+
+.forgot-link{
+    margin-bottom: -15px;
+}
+.forgot-link a{
+    font-size: 0.7rem;
+    color: var(--black);
+    display: block;
+    margin-top: 5px;
+    width: 8rem;
+    transition: color 1s;
+    
+}
+
+.forgot-link a:hover{
+    color: var(--blue);
+}
+
+  /* User dashboard */
+header {
+    font-family: Roboto;
+    font-size: 18px;      
+}
+
+.dash-logo img{
+    width: 7rem;
+}
+
+.dash-logo{
+    text-align: right;
+}
+
+.header-dashboard{
+    position: fixed;
+    top:0;
+    left:0;
+    border: 1px solid var(--blue);
+    height: 100px;
+    display: grid;
+    grid-template-columns: 200px auto auto 200px;
+    background-color: var(--white);
+    grid-gap:50px;
+    align-items: center;
+
+}
+
+.header-dashboard > div{
+    /* border: 1px solid red; */
+}
+
+.dash-top-menu{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap:30px;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.topright-menu{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap:20px;
+    justify-content:flex-start;
+}
+
+.search-bar input[type=text]{
+    height: 35px;
+    transition: width 0s;
+    width: 100%;  
+}
+
+.search-bar input:focus{
+    width: 60%; 
+    position: absolute;
+    top: 33px; 
+    right: 20%;
+}
+
+.search-bar i{
+    position: absolute;
+    right: 16rem;
+    top: 2.3rem;
+}
+
+.search-bar input:focus + span{
+    display: none;
+}
+
+
+
+
+.dashboard{
+    min-height: 85vh;
+    position: relative;
+}
+aside{
+    width: 350px;
+    position: absolute;
+    left: 0;
+    top: 54px;
+    background-color: var(--white);
+    height: 80vh;
+    z-index: -1;
+    display: grid;
+}
+
+aside > div{
+    border: 1px solid red;
+}
+
+
 
 
 
