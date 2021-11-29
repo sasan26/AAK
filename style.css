@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:400,600,700,800');
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900');
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
 :root {
@@ -504,9 +504,9 @@ footer{
 }
 footer .top{
     display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-between;
-    padding: 2rem 7rem 1rem;
+    grid-template-columns: 30% auto;
+    /* justify-content: space-between; */
+    padding: 4rem 3rem 2rem;
     
 }
 
@@ -518,7 +518,7 @@ footer .top .right{
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-around;
-    grid-gap: 0 3rem;
+    grid-gap: 1rem 15rem;
 }
 
 footer .top .right > div{
@@ -533,13 +533,14 @@ footer .top .right > div{
 }
 
 footer .top .left p{
-    font-size: 0.8rem;
-    padding-left: 2rem;
+    font-size: 11px;
+    font-weight:400;
+    /* padding-left: 2rem; */
     margin-top:0;
 }
 
 footer img{
-    width: 60%;
+    width: 200px;
 }
 
 i.fa{
@@ -551,11 +552,13 @@ i.fa{
 footer .middle{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
-    padding: 1rem 7rem;
-    font-size: 0.8rem;
+    padding: 2rem 3rem 2rem 20rem;
+    font-size: 13px;
+    font-weight:400;
+    font-family: Poppins;
     justify-content: space-around;
     grid-gap: 0 3rem;
-    background-color: var(--middle-footer);
+    /* background-color: var(--middle-footer); */
 }
 
 /* bottom footer */
@@ -563,6 +566,7 @@ footer .bottom{
     border-top: 2px solid var(--black);
     text-align: center;
     font-size: 0.8rem;
+    padding: 5px;
 }
 
 /* header */
@@ -811,7 +815,7 @@ header {
     border: 1px solid var(--blue);
     height: 100px;
     display: grid;
-    grid-template-columns: auto 500px 200px 200px;
+    grid-template-columns: 180px auto 400px 200px;
     background-color: var(--white);
     grid-gap:50px;
     align-items: center;
@@ -826,17 +830,27 @@ header {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap:30px;
-    justify-content: center;
-    font-weight: 600;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: Poppins;
 }
+
+.dash-top-menu > div{
+    /* border: 1px solid green; */
+}
+    
 
 .topright-menu{
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap:20px;
-    justify-content:flex-start;
+    justify-content:stretch;
 }
 
+.dash-top-menu i{
+    margin-left: 20px;
+}
 
 .search-bar {
     position: relative;
@@ -851,7 +865,7 @@ header {
 }
 
 .search-bar input:focus{
-    width: 500%; 
+    width: 250%; 
     position: absolute;
     top: -15px; 
     right: 0;    
@@ -916,8 +930,8 @@ aside img{
 
 .user-info i{
     position: absolute;
-    left: 260px;
-    top: 50px;
+    left: 300px;
+    top: 60px;
 }
 
 .valign.active{
@@ -930,19 +944,26 @@ aside img{
 
 .user-info p:first-child{
     font-weight: 600;
+    font-family: Poppins;
+    font-size: 20px;
 }
 .user-info p:nth-child(2){
-    font-size: 1.1rem;
+    font-size: 20px;
     color: var(--blue);
-    font-weight: 600;
+    font-weight: 700;
+    font-family: 'ROBOTO';
+    
 }
 
 .user-info p:nth-child(3), .user-info p:nth-child(4){
-    font-size: 0.8rem;
+    font-size: 14px;
     font-weight: 600;
+    font-family: Poppins;
 }
 .user-info p:nth-child(5){
-    font-size: 0.7rem;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: Poppins;
 }
 
 
