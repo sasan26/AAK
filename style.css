@@ -805,7 +805,7 @@ header {
 
 .dash-logo{
     text-align: left;
-    padding-left: 2rem;
+    padding-left: 4rem;
 }
 
 .header-dashboard{
@@ -815,7 +815,7 @@ header {
     border: 1px solid var(--blue);
     height: 100px;
     display: grid;
-    grid-template-columns: 320px auto 300px 200px;
+    grid-template-columns: 320px auto 500px 300px 200px;
     background-color: var(--white);
     grid-gap: 25px;
     align-items: center;
@@ -844,8 +844,9 @@ header {
 .topright-menu{
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap:20px;
-    justify-content:stretch;
+    /* grid-gap: 20px; */
+    justify-content: space-between;
+    padding-right: 4rem;
 }
 
 .dash-top-menu i{
@@ -892,7 +893,7 @@ header {
 }
 aside{
     font-family: Poppins;
-    width: 350px;
+    width: 390px;
     position: relative;
     left: 0;
     top: 54px;
@@ -907,7 +908,7 @@ aside{
 
 aside > div{
     /* border: 1px solid red; */
-    padding: 10px 3rem;
+    padding: 10px 1rem 10px 5rem;
     position: relative;
 }
 
