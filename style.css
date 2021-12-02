@@ -810,14 +810,14 @@ header {
 
 .header-dashboard{
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     border: 1px solid var(--blue);
     height: 100px;
     display: grid;
-    grid-template-columns: 180px auto 400px 200px;
+    grid-template-columns: 320px auto 300px 200px;
     background-color: var(--white);
-    grid-gap:50px;
+    grid-gap: 25px;
     align-items: center;
 
 }
@@ -828,8 +828,8 @@ header {
 
 .dash-top-menu{
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap:30px;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
     justify-content: space-between;
     font-weight: 700;
     font-size: 20px;
@@ -849,7 +849,7 @@ header {
 }
 
 .dash-top-menu i{
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .search-bar {
