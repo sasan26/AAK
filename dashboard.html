@@ -37,11 +37,11 @@
         </header>
         
         <main class="dashboard">
-             <aside>
+            <aside>
                 <div><img src="img/user-avatar.png"></div>
                 <div><div class="user-info">
                     <p>Welcome!</p>
-                    <p>Ansam Abdulkareem<span><i class="fa fa-edit"></i></span></p>
+                    <p>Ansam Abdulkareem<span><i class="fa fa-pencil"></i></span></p>
                     <p>MicroBio Researcher in</p>
                     <p>Science company</p>
                     <p>Livermore, CA</p>
@@ -56,11 +56,88 @@
                 <div><div class="valign">Pages<i class="fa fa-angle-right"></i></div></div>
                 <div><div class="valign">Activity</div></div>
                 <div><div class="valign">Documents</div></div>
-             </aside>
+            </aside>
 
-            <div class="row-dashboard">
-                
-            </div>
+            <article> 
+                <div class="main-box">
+                    <div class="box">
+                        <div class="header">
+                            <span>About me</span>
+                            <span>
+                                <i class="fa fa-globe"></i>
+                                <button id="about-btn" onclick="aboutme()"><i class="fa fa-pencil"></i></button>
+                            </span>
+                        </div>
+                        <div class="body">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                            cupidatat non proident, sunt in culpa qui officia deserunt.
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="header">
+                            <span>Experience</span>
+                            <span>
+                                <i class="fa fa-globe"></i>
+                                <button onclick="exprience()"><i class="fa fa-plus"></i></button>
+                            </span>
+                        </div>
+                        <div class="body">box</div>
+                    </div>
+
+                    <div class="box">
+                        <div class="header">
+                            <span>Skills</span>
+                            <span>
+                                <i class="fa fa-globe"></i>
+                                <button onclick="skill()"><i class="fa fa-plus"></i></button>
+                            </span>
+                        </div>
+                        <div class="body">box</div>
+                    </div>
+
+                    <div class="box">
+                        <div class="header">
+                            <span>Education</span>
+                            <span>
+                                <i class="fa fa-globe"></i>
+                                <button onclick="education()"><i class="fa fa-plus"></i></button>
+                            </span>
+                        </div>
+                        <div class="body">box</div>
+                    </div>
+
+                    <div class="box">
+                        <div class="header">
+                            <span>Contact Info</span>
+                            <span>
+                                <i class="fa fa-globe"></i>
+                                <button onclick="contact()"><i class="fa fa-plus"></i></button>
+                            </span>
+                        </div>
+                        <div class="body">box</div>
+                    </div>
+                </div>
+
+
+                <div class="modal-frame" id="mabout">
+                    <div class="mbody">
+                        <div class="close" onClick="closeModal()">&times;</div>
+                        <p>Some text in the Modal..</p>
+                    </div>
+                </div>
+
+                <div class="modal-frame" id="mexp">
+                    <div class="mbody">
+                        <div class="close" onClick="closeModal()">&times;</div>
+                        <p>Some experience in the Modal..</p>
+                    </div>
+                </div>
+
+            </article>
 
         </main>
 
@@ -106,22 +183,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
