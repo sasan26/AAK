@@ -5,6 +5,13 @@ var about = document.getElementById("about-btn");
 // var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
+
+function info() {
+    var modal = document.getElementById("info");
+    modal.style.display = "block";
+    console.log("user info");
+}
+
 function aboutme() {
     var modal = document.getElementById("mabout");
     modal.style.display = "block";
@@ -18,15 +25,23 @@ function exprience() {
 }
 
 function skill() {
-    console.log("Skills");
+    var modal = document.getElementById("mski");
+    modal.style.display = "block";
 }
 
 function education() {
-    console.log("Education");
+    var modal = document.getElementById("medu");
+    modal.style.display = "block";
 }
 
 function contact() {
-    console.log("Contact");
+    var modal = document.getElementById("mcon");
+    modal.style.display = "block";
+}
+
+function pic() {
+    var modal = document.getElementById("mpic");
+    modal.style.display = "block";
 }
 
 function closeModal(){

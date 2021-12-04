@@ -50,7 +50,7 @@ html, body {
 }
 body{
     background-color: var(--lighblue);
-    /* padding-bottom: 5rem; */
+    font-family: Poppins;
 }
 
 .container-full{
@@ -128,7 +128,6 @@ header {
 .row p{
     font-size: 38px;
     color: var(--blue);
-    font-family: Poppins;
     font-weight: 600;
 }
 
@@ -176,13 +175,12 @@ input[type=submit] {
     border-radius: 12px;
     cursor: pointer;
     width: 100%;
-    font-family: Poppins;
     font-weight: 700;
     font-size: 18px;
 }
 
 input[type=text], input[type=email],
-input[type=password] {
+input[type=password], input[type=tel] {
 /* width: 82.5%;  */
 padding: 12px; 
 border: 1px solid #ccc;
@@ -252,7 +250,6 @@ input[type="checkbox"]:checked + label::after {
 
 .forms .label{
     display: block;
-    font-family: Poppins;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -276,7 +273,6 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .chbox label{
-    font-family: Poppins;
     font-weight: 400;
     text-decoration: underline;
     font-size:14px;
@@ -285,7 +281,6 @@ input[type="checkbox"]:checked + label::after {
 form ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: var(--gray);
     opacity: 1; /* Firefox */
-    font-family: Poppins;
     font-size: 14px;
     font-weight: 400;
   }
@@ -302,7 +297,6 @@ form ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 .row-steps .title{ 
     font-size: 38px;
     color: var(--blue);
-    font-family: Poppins;
     font-weight: 600;
     margin-bottom: 0;
 }
@@ -310,7 +304,6 @@ form ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 /* subtitle */
 div.label, p.label{
     display: block;
-    font-family: Poppins;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -409,7 +402,6 @@ progress::-webkit-progress-bar {
 
 .text{
     display: block;
-    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 10px;
@@ -420,7 +412,6 @@ progress::-webkit-progress-bar {
 
 .s2{
     color: var(--blue);
-    font-family: Poppins;
 }
 .chbox .step{ text-decoration: none !important;}
 
@@ -507,7 +498,6 @@ main.contactus{
 
 footer{
     background-color: var(--footer);
-    font-family: Poppins;
     /* position:relative;
        left: 0px;
        bottom: 0px;
@@ -569,7 +559,6 @@ footer .middle{
     padding-bottom: 2rem;
     font-size: 13px;
     font-weight: 400;
-    font-family: Poppins;
     justify-content: center;
     grid-gap: 0 4rem;
 }
@@ -595,7 +584,6 @@ header .hero{
 
 header { margin-bottom: 3rem; }
 header .hero .caption{
-    font-family: Poppins;
     font-weight: 700;
     color: var(--blue);
     text-align: center;
@@ -636,7 +624,6 @@ header .hero .caption{
     border-radius: 12px;
     cursor: pointer;
     width: 100%;
-    font-family: Poppins;
     font-weight: 600;
     font-size: 16px;
 }
@@ -649,7 +636,6 @@ header .hero .caption{
     justify-items: center;
     align-items: center;
     padding: 0 2rem;
-    font-family: Poppins;
     font-weight: 700;
     margin-top:0;
 }
@@ -696,7 +682,6 @@ header .hero .caption{
 }
 
 header .hero-empty .caption{
-    font-family: Poppins;
     font-weight: 700;
     color: var(--blue);
     text-align: center;
@@ -727,7 +712,6 @@ header .hero-empty .caption{
     margin: 4rem auto;
     border: 1px solid var(--blue);
     border-top: 2px solid var(--blue);
-    font-family: Poppins;
     font-size: 1.3rem;
 }
 
@@ -738,7 +722,6 @@ header .hero-empty .caption{
     border: none;
     border-radius: 12px;
     cursor: pointer;
-    font-family: Poppins;
     font-weight: 600;
     font-size: 16px;
     width: 80%;
@@ -753,7 +736,6 @@ header .hero-empty .caption{
     border: none;
     border-radius: 12px;
     cursor: pointer;
-    font-family: Poppins;
     font-weight: 600;
     font-size: 16px;
     width: 80%;
@@ -846,13 +828,84 @@ header {
     justify-content: space-between;
     font-weight: 700;
     font-size: 20px;
-    font-family: Poppins;
 }
 
 .dash-top-menu > div{
     /* border: 1px solid green; */
 }
-    
+  
+.dash-top-menu .menu2{
+    position: relative;
+}
+
+.dash-top-menu .menu2 .sub-menu,
+.dash-top-menu .project-sub-menu{
+    display: none;
+    grid-template-columns: auto;
+    grid-row-gap: 20px;
+    border: 1px solid var(--blue);
+    background-color: var(--white);
+    padding: 20px 30px;
+    width: 140px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.dash-top-menu .menu2 .sub-menu i{
+   float: right;
+}
+
+.dash-top-menu .sub-menu button,
+.dash-top-menu .project-sub-menu button{
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+    background-color: var(--footer);
+    border: 1px solid var(--blue);
+    border-radius: 10px;
+    height: 30px;
+    width: 140px;
+    text-align: left;
+    font-size: 18px;
+    padding-left: 10px;
+} 
+
+.dash-top-menu .project-sub-menu button,
+.dash-top-menu .project-sub-menu{
+    width: 200px;
+}
+
+.dash-top-menu .project-sub-menu{
+    border-radius: 0 10px 10px 0;
+    /* border-left: none; */
+}
+
+.dash-top-menu .sub-menu button:hover{
+    cursor: pointer;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.dash-top-menu .sub-menu button:hover i{
+    color: var(--white);
+}
+
+.dash-top-menu .menu2:hover{
+    cursor: pointer;
+}
+
+.dash-top-menu .menu2:hover .sub-menu{
+    display: grid;
+    position: absolute;
+    top: 24px;
+    left: -50px;
+}
+
+#project:hover ~ .project-sub-menu, .project-sub-menu:hover{
+    display: grid !important;
+    position: absolute;
+    top: 0px;
+    left: 200px;
+}
+
 
 .topright-menu{
     display: grid;
@@ -898,13 +951,8 @@ main.dashboard{
 }
 
 .dashboard aside{
-    font-family: Poppins;
-    /* width: 390px; */
-    position: relative;
-    left: 0;
-    top: 54px;
     background-color: var(--white);
-    /* height: 80vh; */
+    padding-top: 54px;
     display: grid;
     grid-row-gap: 0;
     grid-template-columns: auto;
@@ -917,9 +965,13 @@ main.dashboard{
     position: relative;
 }
 
-aside img{
+.dashboard aside img{
     width: 5rem;
     margin-top: 10px;
+}
+
+.dashboard aside img:hover{
+    cursor: pointer;
 }
 
 .valign{
@@ -934,7 +986,7 @@ aside img{
     top: 4px;
 }
 
-.user-info i{
+.user-info button{
     position: absolute;
     left: 350px;
     top: 60px;
@@ -950,7 +1002,6 @@ aside img{
 
 .user-info p:first-child{
     font-weight: 600;
-    font-family: Poppins;
     font-size: 20px;
 }
 .user-info p:nth-child(2){
@@ -964,12 +1015,10 @@ aside img{
 .user-info p:nth-child(3), .user-info p:nth-child(4){
     font-size: 14px;
     font-weight: 600;
-    font-family: Poppins;
 }
 .user-info p:nth-child(5){
     font-size: 12px;
     font-weight: 400;
-    font-family: Poppins;
 }
 
 .dashboard article{
@@ -1011,7 +1060,6 @@ aside img{
 
 .dashboard article .body{
     line-height: 2;
-    font-family: Poppins;
     font-size: 18px;
 }
 
@@ -1021,12 +1069,13 @@ aside img{
 
 
 
-.box button i:hover{
+.box button i:hover,
+.user-info button i:hover{
     cursor: pointer;
     color: var(--black);
 }
 
-.box button{
+.box button, .user-info button{
     border: none;
     background-color: transparent;
 }
@@ -1038,8 +1087,10 @@ aside img{
 .dashboard .modal-frame .close{
     background-color: var(--gray);
     border-radius: 50%;
-    padding: 1px 5px;
+    padding: 1px 8px;
     float: right;
+    margin-bottom: 20px;
+    color: var(--green);
 }
 
 .dashboard .modal-frame div:hover{
@@ -1049,12 +1100,16 @@ aside img{
 .dashboard .mbody{
     background-color: #fefefe;
     margin: auto;
-    padding: 20px;
+    padding: 30px;
     border: 1px solid #888;
     width: 50%;
     position: absolute;
     top: 200px;
     left: 25%;
+    display: grid;
+    grid-template-columns: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
 .dashboard .modal-frame {
@@ -1063,14 +1118,184 @@ aside img{
     left: 0;
     top: 0;
     width: 100%; 
-    height: 100%;
+    height: calc(100vh - 100px);
     padding-top: 100px;     
     overflow: auto; 
     background-color: rgba(0,0,0,0.5); 
     z-index: 1;
-  }
+}
+
+.dashboard .caption span{
+    font-size: 20px;
+    font-weight: 700;
+    float: left;
+}
+
+.dashboard .caption hr{
+    clear: both;
+    border-color: var(--blue);
+}
+
+.dashboard .mbody .content div{
+    margin: 10px auto;
+}
+
+.dashboard .mbody .content input[type=text]{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.dashboard .content .t2{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.dashboard .content input[type=submit]{
+    font-size: 18px;
+    width: 40%;
+    height: 72px;
+    margin: 20px 30% 5px;
+}
+
+.dashboard .content textarea{
+    height: 200px;
+    margin: 20px 0;
+}
+
+.dashboard .content .dates{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;;
+}
+
+.dashboard .content .check{
+    margin: 10px 0 20px !important;
+}
+
+.dashboard select {
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    margin: 0;
+    height: 50px;
+    color: var(--blue);
+    font-size: 1rem;
+} 
+
+.dashboard .rm-site, .dashboard .add-site{
+    font-weight: 700;
+    color: var(--blue);
+}
+
+.dashboard .rm-site{
+    float: right;
+    margin-top: -25px !important;
+}
+
+.dashboard .add-site{
+    clear:both;
+}
+
+.dashboard .add-site i{
+    font-weight: 300;
+}
+
+.dashboard .info-skills{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-between;
+}
+
+.dashboard .info-skills button{
+    border-radius: 10px;
+    color: var(--white);
+    background-color: var(--green);
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.4));
+    height: 40px;
+    border: none;
+    width: 125px;
+}
+
+.dashboard .info-add-btn button{
+    border-radius: 10px;
+    color: var(--black);
+    background-color: var(--lighblue);
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.4));
+    height: 40px;
+    border: none;
+    width: 125px;
+    margin-top: 20px;
+}
+
+.dashboard .info-add-btn i{
+    float: right;
+}
+
+.dashboard .user-img{
+    padding: 0;
+}
+
+.dashboard .user-img .caption{
+    border: 1px solid var(--blue);
+    border-radius: 10px 10px 0 0;
+    padding: 20px 20px 0;
+}
+
+.dashboard .user-img .mfooter{
+    border: 1px solid var(--blue);
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+    text-align: right;
+}
+
+.dashboard .user-img .mfooter button{
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    width: 150px;
+    height: 40px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border: none;
+}
+
+.dashboard .user-img .mfooter button:first-child{
+    border: 1px solid var(--blaue);
+    background-color: var(--white);
+    color: var(--black);
+    margin-right: 10px;
+}
+
+.dashboard .user-img .mfooter button:nth-child(2){
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.dashboard .user-img .content{
+    padding: 100px 50px;
+    border: 1px solid var(--blue);
+}
+.dashboard .user-img .content img{
+    margin: auto;
+    display: block;
+}
+
 
  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
