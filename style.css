@@ -552,6 +552,11 @@ i.fa{
     color: var(--blue);
 }
 
+footer i.fa{
+    margin-right: 20px;
+    color: var(--blue);
+}
+
 /* middel footer section */
 footer .middle{
     display: grid;
@@ -985,10 +990,20 @@ header {
 }
 
 .search-bar input:focus{
-    width: 250%; 
+    width: 300%; 
     position: absolute;
     top: -15px; 
     right: 0;    
+}
+
+.search-bar i.fa-search{
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.search-bar input:focus ~ i{
+    top: -8px !important;
 }
 
 .dashboard{
