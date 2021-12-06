@@ -1479,6 +1479,22 @@ width: 300px;
 border-radius: 10px;
 }
 
+.hero-landing .volume{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 25px;
+}
+
+.hero-landing .volume:hover{
+    cursor: pointer;
+}
+
+#v-unmute{ display: none;}
+
+.hero-landing i{
+    color: var(--white) !important;
+}
 .landing div span:first-child{
     color: var(--blue);
     font-weight: 700;

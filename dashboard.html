@@ -17,7 +17,7 @@
                 <div class="dash-logo"><img src="img/aak-logo.png"></div>
                 <div>&nbsp;</div>
                 <div class="dash-top-menu">
-                    <div id="menu1" class="menu2">
+                    <div id="menu1" class="menu2" onmouseout="hideSubmenu()">
                         Explore<i class="fa fa-angle-down"></i>
                         <div class="sub-menu">
                             <button id="project" onmouseover="subMenu('project-submenu','post-submenu','page-submenu','project-on','post-on','page-on','menu-border','menu-border-bottom',0)">All Projects<i class="fa fa-angle-right"></i></button>
@@ -39,7 +39,7 @@
                         </div>
                     </div>
 
-                    <div id="menu2" class="menu2" onmouseout="hideMenu()">
+                    <div id="menu2" class="menu2" onmouseover="hideSubmenu()">
                         Resources<i class="fa fa-angle-down"></i>
                         <div class="sub-menu">
                             <button>News</button>
@@ -49,7 +49,7 @@
                         </div>
                     </div>
 
-                    <div id="menu3" class="menu2">
+                    <div id="menu3" class="menu2" onmouseout="hideSubmenu()">
                         Database<i class="fa fa-angle-down"></i>
                         <div class="sub-menu w200">
                             <button id="eu" class="w200" onmouseover="subMenu('eu-submenu','us-submenu','ins-submenu','eu-on','us-on','ins-on','menu-border','menu-border-bottom',2)">EU Database<i class="fa fa-angle-right"></i></button>

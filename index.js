@@ -65,7 +65,7 @@ function subMenu(id1,id2,id3,add,rm1,rm2,badd,brm,num){
 
 
 
-function hideMenu(){
+function hideSubmenu(){
     var subMenu = document.getElementById("project-submenu");
     var subMenu2 = document.getElementById("post-submenu");
     var subMenu3 = document.getElementById("page-submenu");
@@ -100,15 +100,51 @@ function hideMenu(){
 
 function play() { 
     var video = document.getElementById("hero-video"); 
-    if (video.paused) 
+    if (video.paused) {
         video.play(); 
-    else 
-        video.pause();     
+       console.log(video.muted);}
+    else {
+        video.pause();  console.log(video.muted)   }
 }
 
-function hideCookie(){
+function muteVideo() { 
+    var video = document.getElementById("hero-video"); 
+    var muteV = document.getElementById("v-mute");
+    var unmuteV = document.getElementById("v-unmute");
+    if (video.muted) {
+        video.muted = false; 
+        muteV.style.display = "none";
+        unmuteV.style.display = "block";
+    }
+    else{ 
+        video.muted = true; 
+        unmuteV.style.display = "none";
+        muteV.style.display = "block";
+    }   
+}
+
+// function hideCookie(){
+//     var cookie = document.getElementById("cookie");
+//     cookie.style.display = "none";
+// }
+
+function acceptCookie(){
     var cookie = document.getElementById("cookie");
     cookie.style.display = "none";
+     console.log("hichi");
+     if (typeof(Storage) !== "undefined") {
+        localStorage.setItem("AAKcookie", "yes");  console.log("yes");      
+    } 
+    else{console.log("no");}
+}
+
+function getCookie(){ 
+    var cookieAAK = localStorage.getItem("AAKcookie");
+    var cookie = document.getElementById("cookie");
+    if( cookieAAK == "yes" ){
+        cookie.style.display = "none";
+    }
+    console.log(cookieAAK);
 }
 
 
