@@ -51,5 +51,65 @@ function closeModal(){
     }
 }
 
+function subMenu(id1,id2,id3,add,rm1,rm2,badd,brm,num){
+    var mborder = document.getElementsByClassName("sub-menu")[num];
+    var subMenu = document.getElementById(id1);
+    var subMenu2 = document.getElementById(id2);
+    var subMenu3 = document.getElementById(id3);
+    subMenu.classList.add(add);   
+    subMenu2.classList.remove(rm1);
+    subMenu3.classList.remove(rm2);
+    mborder.classList.add(badd);
+    mborder.classList.remove(brm);
+}
+
+
+
+function hideMenu(){
+    var subMenu = document.getElementById("project-submenu");
+    var subMenu2 = document.getElementById("post-submenu");
+    var subMenu3 = document.getElementById("page-submenu");
+    var subMenu4 = document.getElementById("eu-submenu");
+    var subMenu5 = document.getElementById("us-submenu");
+    var subMenu6 = document.getElementById("ins-submenu");
+    var mborder = document.getElementsByClassName("sub-menu")[0];
+    var mborder2 = document.getElementsByClassName("sub-menu")[2];
+    subMenu.classList.remove("project-on");
+    subMenu2.classList.remove("post-on");
+    subMenu3.classList.remove("page-on");
+    subMenu4.classList.remove("eu-on");
+    subMenu5.classList.remove("us-on");
+    subMenu6.classList.remove("ins-on");
+    mborder.classList.remove("menu-border");
+    mborder.classList.remove("menu-border-bottom");
+    mborder2.classList.remove("menu-border");
+    mborder2.classList.remove("menu-border-bottom");
+}
+
+function showMenu(){
+    var menu = document.getElementById("mainmenu");
+    menu.style.display = "block";
+}
+
+function hideMenu(){
+    var menu = document.getElementById("mainmenu");
+    menu.style.display = "none";
+}
+
+
+
+function play() { 
+    var video = document.getElementById("hero-video"); 
+    if (video.paused) 
+        video.play(); 
+    else 
+        video.pause();     
+}
+
+function hideCookie(){
+    var cookie = document.getElementById("cookie");
+    cookie.style.display = "none";
+}
+
 
 
