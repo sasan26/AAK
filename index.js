@@ -148,4 +148,80 @@ function getCookie(){
 }
 
 
+function projMenuShow(){
+    var submenu = document.getElementById("pmenu");
+    if( submenu.style.display == "block" ){
+        submenu.style.display = "none"
+    }
+    else{
+        submenu.style.display = "block"
+    }
+    
+}
+function subfilter(){
+    var filter = document.getElementById("sub-filter");
+    if( filter.style.display == "block" ){
+        filter.style.display = "none"
+    }
+    else{
+        filter.style.display = "block"
+    }
+}
+
+function filterToggle(id){
+    var filter = document.getElementById(id);
+    var down = document.querySelector("."+id+" .fa-angle-down");
+    var up = document.querySelector("."+id+" .fa-angle-up");
+    const filters = ["year-menu", "lang-menu", "category-menu", "location-menu"];
+    if( filter.style.display == "block" ){
+        for( var i = 0; i< filters.length; i++){
+            var subfilter = document.getElementById(filters[i]);
+            var upArr = document.querySelector("."+filters[i]+" .fa-angle-up");
+            var dArr = document.querySelector("."+filters[i]+" .fa-angle-down");
+            subfilter.style.display = "none";
+            upArr.style.display = "none";
+            dArr.style.display = "inline";
+        }
+        filter.style.display = "none";
+        down.style.display = "inline";
+        up.style.display = "none";
+
+    }
+    else{
+        
+        for( var i = 0; i< filters.length; i++){
+            var subfilter = document.getElementById(filters[i]);
+            var upArr = document.querySelector("."+filters[i]+" .fa-angle-up");
+            var dArr = document.querySelector("."+filters[i]+" .fa-angle-down");
+            subfilter.style.display = "none";
+            up.style.display = "inline";
+            down.style.display = "none";
+            upArr.style.display = "none";
+            dArr.style.display = "inline";
+        }
+        filter.style.display = "block";
+        up.style.display = "inline";
+        down.style.display = "none";
+        
+    }
+}
+
+function expandBox(){
+    var acc = document.getElementsByClassName("pbox");
+    var acc2 = document.getElementsByClassName("chor")[0];
+    for( var i = 0; i < acc.length; i++){
+        acc[i].addEventListener("click", function() {
+            console.log(acc[i]);
+            var panel = document.querySelector(".pbox" + + " .chor");
+            console.log(panel);
+            if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            acc2.style.display = "none";
+            } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            acc2.style.display = "block";
+            } 
+        });
+    }
+}
 
