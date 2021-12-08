@@ -1761,6 +1761,7 @@ color: var(--blue);
 
 
 .chor{display:none;}
+.show-more{display:block;}
 /* .proj-con .pbox:hover .chor{
    display: block;    
 } */

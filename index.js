@@ -206,22 +206,28 @@ function filterToggle(id){
     }
 }
 
-function expandBox(){
-    var acc = document.getElementsByClassName("pbox");
-    var acc2 = document.getElementsByClassName("chor")[0];
-    for( var i = 0; i < acc.length; i++){
-        acc[i].addEventListener("click", function() {
-            console.log(acc[i]);
-            var panel = document.querySelector(".pbox" + + " .chor");
-            console.log(panel);
-            if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-            acc2.style.display = "none";
-            } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-            acc2.style.display = "block";
-            } 
-        });
-    }
+function expandBox(id){
+    // var acc = document.getElementsByClassName("pbox");
+    // var acc2 = document.getElementsByClassName("chor")[0];
+    // for( var i = 0; i < acc.length; i++){
+    //     acc[i].addEventListener("click", function() {
+    //         console.log(acc[i]);
+    //         var panel = document.querySelector(".pbox" + + " .chor");
+    //         console.log(panel);
+    //         if (panel.style.maxHeight) {
+    //         panel.style.maxHeight = null;
+    //         acc2.style.display = "none";
+    //         } else {
+    //         panel.style.maxHeight = panel.scrollHeight + "px";
+    //         acc2.style.display = "block";
+    //         } 
+    //     });
+    // }
+
+    var acc = document.getElementsByClassName("chor")[id];
+    var b = document.getElementsByClassName("body")[0];
+    
+    // b.style.display = "none"
+    acc.classList.toggle("show-more");
 }
 
