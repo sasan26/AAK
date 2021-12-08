@@ -225,9 +225,18 @@ function expandBox(id){
     // }
 
     var acc = document.getElementsByClassName("chor")[id];
-    var b = document.getElementsByClassName("body")[0];
+    var panel = document.getElementsByClassName("panel")[id];
+    var box = document.getElementsByClassName("pbox")[id];
     
     // b.style.display = "none"
     acc.classList.toggle("show-more");
+
+    if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        box.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        box.style.maxHeight =   "1000px";
+      } 
 }
 

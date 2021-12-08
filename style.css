@@ -1760,8 +1760,8 @@ color: var(--blue);
 }
 
 
-.chor{display:none;}
-.show-more{display:block;}
+/* .chor{display:none;} */
+.show-more{display:none;}
 /* .proj-con .pbox:hover .chor{
    display: block;    
 } */
@@ -1769,6 +1769,12 @@ color: var(--blue);
 /* .proj-con .pbox:hover{    
     max-height: 1000px !important;    
 } */
+
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
 
 .proj-con .pbox .header-proj{
     display: grid;
