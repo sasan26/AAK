@@ -336,7 +336,7 @@ div.label, p.label{
 }
 
 #progressbar{
-    width: 65%;
+    width: 67%;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -935,7 +935,10 @@ header {
     top: 24px;
     left: -50px;
 }
-
+.dash-top-menu .menu2 span.active,
+.dash-top-menu .menu2 span.active i.fa{
+    color: var(--blue) !important;
+}
 
 .project-on{
     display: grid !important;
@@ -2076,6 +2079,98 @@ color: var(--blue);
 
 .proj-create .dates select{
     /* background-color: var(--white); */
+}
+
+.proj-create input[type="file"]{
+    
+}
+
+.proj-create .attachment > div:nth-child(2),
+.proj-create .scope > div:nth-child(2){
+    color: var(--gray);
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.proj-create .scope .sc-select{
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--blue);
+    background-color: var(--white);
+    padding: 20px 10px;
+}
+
+.proj-create .startup label{
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.proj-create .skill span{
+    color: var(--blue);
+    font-size: 14px;
+    margin-left: 20px;
+}
+.proj-create .skill div{
+    color: var(--gray);
+    font-size: 14px;
+}
+
+.proj-create .skill span i.fa-plus{
+    font-size: 10px !important;
+    margin-right: 5px;
+}
+
+.proj-create .skill .sbox{
+    position: relative;
+    border: 1px solid var(--blue);
+    border-radius: 10px;
+    width: 20%;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+.proj-create .skill .sbox div{
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    color: var(--blue);
+}
+.proj-create .skill .listed div{
+    padding: 5px 20px;;
+    color: var(--white);
+    background-color: var(--green);
+    border: none;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 20px;
+    width: 50px;
+    text-align: center;
+}
+
+.proj-create .scope .sc-select div div{
+    border: 1px solid var(--blue);
+    border-radius: 10px;
+    background-color: var(--footer);
+    padding: 5px 10px;
+    margin-top: 5px;
+    position: relative;
+}
+
+.proj-create .scope .sc-select > div{
+    margin-bottom: 20px;
+}
+
+.proj-create .scope .sc-select i{
+    margin-left: 20px;
+    color: var(--gray);
+}
+
+.proj-create .scope .sc-select div div > i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
 
 

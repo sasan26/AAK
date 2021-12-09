@@ -18,7 +18,7 @@
                 <div>&nbsp;</div>
                 <div class="dash-top-menu">
                     <div id="menu1" class="menu2" onmouseout="hideSubmenu()">
-                        Explore<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i>
+                        <span class="active">Explore<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></span>
                         <div class="sub-menu">
                             <button id="project" onmouseover="subMenu('project-submenu','post-submenu','page-submenu','project-on','post-on','page-on','menu-border','menu-border-bottom',0)">All Projects<i class="fa fa-angle-right"></i></button>
                             <div class="project-sub-menu w200" id="project-submenu">
@@ -115,7 +115,7 @@
                                     <div>Social</div>
                                     <div><button>Events</button></div>
                                     <div><button>Connections</button></div>
-                                    <div><button>AAK Connect</button></div>
+                                    <div><button>AAK Ventures</button></div>
                                     <div><button>AAK Members</button></div>
                                     <div><button>Pages</button></div>
                                 </div>
@@ -145,7 +145,7 @@
                 <div><div class="valign">Home</div></div>
                 <div><div class="valign">Analytics</div></div>
                 <div><div class="valign">Collaborators</div></div>
-                <div><div class="valign active">My Projects</div></div>
+                <div><div class="valign">My Projects</div></div>
                 <div><div class="valign">Researcher Profile</div></div>
                 <div><div class="valign">Update scientific profile</div></div>
                 <div><div class="valign">My Posts</div></div>
@@ -260,9 +260,48 @@
                                     <label class="s2">Summary<span class="required">*</span></label>                       
                                     <textarea id="" class="w100 mt1 mb1" ></textarea>
                                 </div>
-                                <div class="fw">Add Attachment</div>
-                                <div class="fw">Is this a startup?</div>
-                                <div class="fw">Skills</div>
+                                <div class="fw attachment">
+                                    Add Attachment
+                                    <div><input type="file" value="Choose File"></div>
+                                    <div>Maximum file size is 5MB</div>
+                                </div>
+                                <div class="fw scope">
+                                    <div>Scope of the project (Technology Readiness Level)</div>
+                                    <div>Select the categories that best defines the scope of your project scope.</div>
+                                    <div class="sc-select">
+                                        <div>
+                                            Scientific or technological research<i class="fa fa-angle-up"></i>
+                                            <div>Study of the problem space<i class="fa fa-check"></i></div>
+                                            <div>Theoretical analysis or design of solution</div>
+                                            <div>Lab evaluation of theoretical analysis of results</div>
+                                        </div>
+
+                                        <div>
+                                            Technology or solution development<i class="fa fa-angle-up"></i>
+                                            <div>Proof of concept of solution components or technological elements</div>
+                                            <div>Validation of first prototype in relevant simulated scenario</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fw chbox startup">
+                                        <input type="checkbox" id="startup" name="startup" value="startup">
+                                        <label for="startup" class="step">Is this a start-up project?</label>                                    
+                                </div>
+                                <div class="fw skill">
+                                    Skills
+                                    <div>No skills listed
+                                        <span>
+                                            <i class="fa fa-plus"></i>Add skill
+                                        </span>
+                                        <div class="sbox">
+                                            Add Skill<div>Add</div>
+                                        </div>
+                                        <div class="listed">
+                                            <div>PHP</div>
+                                            <div>SCSS</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>
