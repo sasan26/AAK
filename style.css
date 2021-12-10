@@ -458,10 +458,6 @@ progress::-webkit-progress-bar {
     justify-items: center;
 }
 
-.dragdrop > div {    
-    
-}
-
 .upload-btn{
     border-radius: 12px;
     color: var(--blue);
@@ -495,9 +491,9 @@ progress::-webkit-progress-bar {
 /* contact us */
 main.contactus{
     background-color: var(--white);
-    margin-top: 0px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    margin-top: 0;
+    padding-top: 60px;
+    padding-bottom: 5rem;
 }
 
 footer{
@@ -608,6 +604,37 @@ header .hero .caption{
 }
 
 /* main */
+main .hero{
+    /* width: 100%; */
+    background-image: URL("img/contactus-hero.png");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+main .hero .caption{
+    font-weight: 700;
+    color: var(--blue);
+    text-align: center;
+    background-color: var(--formbg);
+    border: 1px solid var(--blue);
+    position: absolute;
+    bottom: -2.7rem;
+    width: 78%;
+    left: 11%;
+    padding: 0;
+    border-radius: 12px;
+    font-size: 1.5rem;
+}
+
+.row-login{
+    padding-top: 10rem;
+}
+.row-contact{
+    padding-top: 0;
+}
+
 .row-contact span{
     text-align: center;
 }
@@ -678,11 +705,10 @@ header .hero .caption{
 }
 
 /* login */
-
 .hero-empty{
     background-color: var(--white);
-    padding-top: 4rem;
-    margin-bottom: -50px;
+    padding-top: 0;
+    /* margin-bottom: -50px; */
     display: grid;
     grid-template-columns: auto 40% auto;
     align-items: center;
@@ -725,7 +751,7 @@ header .hero-empty .caption{
 }
 
 .loginform-btn {
-    background-color: var(--blue);
+    background-color: var(--blue) !important;
     color: white;
     padding: 15px 1rem;
     border: none;
