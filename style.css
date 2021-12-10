@@ -2121,22 +2121,34 @@ color: var(--blue);
     margin-right: 5px;
 }
 
-.proj-create .skill .sbox{
+.proj-create .skill .sbox {
     position: relative;
-    border: 1px solid var(--blue);
-    border-radius: 10px;
-    width: 20%;
-    padding: 5px 10px;
+    width: 260px;
     margin-top: 10px;
+    display: none;
 }
 
-.proj-create .skill .sbox div{
-    display: inline-block;
+.proj-create .skill .sbox input[type="text"]{
+    border: 1px solid var(--blue);
+    border-radius: 10px;
+    /* width: 20%; */
+    padding: 5px 10px;
+    height: 30px;
+    background-color: transparent;
+    font-size: 18px;
+    color: var(--black);
+}
+
+.proj-create .skill .sbox label{
     position: absolute;
-    right: 10px;
+    right: 30px;
+    top: 5px;
     color: var(--blue);
 }
-.proj-create .skill .listed div{
+
+.proj-create .skill .listed div,
+.proj-review .listed div,
+.proj-complete .footer-c .listed div{
     padding: 5px 20px;;
     color: var(--white);
     background-color: var(--green);
@@ -2147,15 +2159,27 @@ color: var(--blue);
     margin-top: 20px;
     width: 50px;
     text-align: center;
+    position: relative;
 }
 
-.proj-create .scope .sc-select div div{
+.proj-create .skill .listed div i{
+    position: absolute;
+    right: -5px;
+    top: 1px;
+    color: red !important;
+    font-size: 12px !important;
+}
+
+.proj-create .scope .sc-select div button{
     border: 1px solid var(--blue);
-    border-radius: 10px;
-    background-color: var(--footer);
+    border-radius: 6px;   
     padding: 5px 10px;
-    margin-top: 5px;
-    position: relative;
+    margin-top: 7px;
+    position: relative;  
+    display: block;
+    background-color: var(--white);  
+    width: 100%;
+    text-align: left;
 }
 
 .proj-create .scope .sc-select > div{
@@ -2167,10 +2191,125 @@ color: var(--blue);
     color: var(--gray);
 }
 
-.proj-create .scope .sc-select div div > i{
+.proj-create .scope .sc-select i.fa-angle-up{
+    display: none;
+}
+
+.proj-create .scope .sc-select div button > i{
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 0;
+    top: 6px;
+    color: var(--green);
+    display: none;
+}
+
+.scope-selected-item{
+    background-color: var(--footer) !important;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.35);
+}
+
+.display-check{
+    display: block !important;
+}
+
+.proj-create .scope .q-btn{
+    display: none;
+}
+
+.proj-create .form-btns{
+    display: grid;
+    grid-template-columns: auto 100px auto auto;
+    justify-content: stretch;
+    grid-gap: 10px;
+    margin-top: 30px;
+}
+
+.proj-create .form-btns button{
+    height: 70px;
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    background-color: var(--white);
+    color: var(--blue);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.proj-create .form-btns .continue-btn{
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.proj-create .form-btns .complete-btn{
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.proj-con .proj-review .panel{
+    max-height: 2000 !important;
+}
+
+.proj-form input[type="date"],
+.proj-form select{
+    color: var(--gray) !important;
+    font-size: 18px;
+}
+
+.proj-review .top-section{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.proj-review .proj-form div h3{
+    margin-bottom: 3px;
+    text-decoration: underline;
+}
+.proj-review .proj-form div p{
+    margin-top: 0;
+}
+
+.proj-review .proj-form a{
+    display: block;
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.proj-complete .footer-c {
+    margin-top: 30px;
+    font-size: 16px;
+    padding-bottom: 40px;
+}
+.proj-complete .footer-c .lfooter {
+    float: left;
+}
+.proj-complete .footer-c .rfooter {
+    float: right;
+    color: var(--gray); 
+}
+.proj-complete .footer-c .listed div{
+    margin-top: 10px !important;
+}
+.proj-complete .pbox{
+    padding-bottom: 60px;
+}
+.proj-complete .pbox .ul{
+    font-size: 18px;
+    font-weight: 700;
+}
+.proj-complete .pbox .ul div{
+    font-size: 15px;
+}
+.proj-complete .pbox .ul i{
+    margin-left: 0;
+}
+.proj-complete .success-info{
+    text-align: center;
+    color: var(--green);
+    font-weight: 700;
+    font-size: 20px;
+    margin: 30px auto;
+}
+.proj-complete .success-info i.fa{
+    font-size: 150px;
+    color: var(--green) !important;
 }
 
 

@@ -258,3 +258,46 @@ function expandBox(id){
       } 
 }
 
+function selectMenu(){
+    var s = document.activeElement.id;
+    var item = document.getElementById(s);
+    var i = document.querySelector("#" + s + " i.fa-check")
+
+    item.classList.toggle("scope-selected-item");
+    i.classList.toggle("display-check");
+    
+}
+
+function addSkill(){
+    var item = document.getElementById("addskill").value;
+    console.log(item);
+    var skill = document.createElement("DIV");
+    skill.innerHTML = item;
+    document.getElementById("listed").appendChild(skill);
+}
+
+function showSkillBox(){
+    var item = document.getElementsByClassName("sbox")[0];
+    item.classList.toggle("display-check");
+}
+
+function showItems(id){
+    var item = document.getElementsByClassName("q-btn")[id];
+    // item.classList.toggle("display-check");
+
+    var arr = document.getElementsByClassName("qarru")[id];
+    var arr2 = document.getElementsByClassName("qarrd")[id];
+
+    if(item.style.display == "block"){
+        item.style.display = "none";
+        arr.style.display = "none";
+        arr2.style.display = "inline-block"
+    }
+    else{
+        item.style.display = "block";
+        arr2.style.display = "none";
+        arr.style.display = "inline-block"
+    }
+ 
+}
+

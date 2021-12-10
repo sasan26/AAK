@@ -155,7 +155,7 @@
             </aside>
 
             <article> 
-                <div class="proj-create proj-con">
+                <div class="proj-create proj-con proj-review">
 
                     <div class="title">
                         Create a project
@@ -163,156 +163,110 @@
 
                     <div class="pbar">
                         <div class="label plabel">Step1</div>
-                        <div class="label plabel step-disabled">Step2</div>
+                        <div class="label plabel">Step2</div>
                         <div class="label plabel step-disabled">Step3</div>
-                        <div class="c1"><span class="circle circle-current"></span></div>
-                        <div class="c2"><span class="circle"></div>
+                        <div class="c1"><span class="circle circle-active"></span></div>
+                        <div class="c2"><span class="circle circle-current"></div>
                         <div class="c3"><span class="circle"></div>
                         <div class="text">Project description</div>
                         <div class="text">Review</div>
                         <div class="text disabled">Complete</div>
-                        <div class="progressbar"><progress id="progressbar" value="0" max="100"></progress></div>
+                        <div class="progressbar"><progress id="progressbar" value="50" max="100"></progress></div>
                     </div>
 
                     <div class="proj-form mt3">
-                        <div class="pheader mb5">
-                            <div><h3>Project Description</h3></div>
-                            <div>* required fields</div>
-                        </div>
                         <div class="pbody">
-                            <form>
+                          
+                            <!-- Project Box -->
+                            <div class="header-proj">
+                                <div >
+                                                               
+                                </div>
+                                <div class=""><h2>Review and finalize your project</h2></div>
+                                <div class="sub-info mb3">Before creating your project, please review the information that you enetered are correct.</div>
+                                <div class="ul">    
+                                    Project description                                 
+                                </div>
+                                <div class="ur">                                   
+                                    <i class="fa fa-globe"></i>
+                                    <i class="fa fa-pencil"></i>                                   
+                                </div>
+                            </div>
+                                           
+                                <div class="top-section">
+                                    <div>
+                                        <h3>Start Date</h3>
+                                        <p>January 1, 2021</p>
+                                    </div>
+                                    <div>
+                                        <h3>End Date</h3>
+                                        <p>January 1, 2021</p>
+                                    </div>
+                                    <div>
+                                        <h3>Country</h3>
+                                        <p>USA</p>
+                                    </div>
+                                    <div>
+                                        <h3>Language</h3>
+                                        <p>English</p>
+                                    </div>
+                                    <div>
+                                        <h3>Privacy</h3>
+                                        <p>Public</p>
+                                    </div>
+                                    <div>
+                                        <h3>Budget</h3>
+                                        <p>$5K - $10K USD</p>
+                                    </div>
+                                </div>
                                 <div>
-                                    <label class="s2">Start Date<span class="required">*</span></label>                       
-                                    <input type="date" id="nih" name="nih" class="nih w100 mt1 mb1" placeholder="MM/DD/YYYY">
-                                </div>
-                                <div>
-                                    <label class="s2">End Date<span class="required">*</span></label>                       
-                                    <input type="date" id="nih" name="nih" class="nih w100 mt1 mb1" placeholder="MM/DD/YYYY">
-                                </div>
-                                <div class="dates">
-                                    <label class="s2">Country<span class="required">*</span></label>                       
-                                    <div class="select-wrapper mt1 mb1 w100">
-                                        <select name="month" id="month-start-date">
-                                            <option>Select Country</option>
-                                            <option value='1'>Country</option>
-                                            <option value='2'>Country</option>
-                                            <option value='3'>Country</option>
-                                            <option value='4'>Country</option>
-                                            <option value='5'>Country</option>
-                                            <option value='6'>Country</option>
-                                            <option value='7'>Country</option>
-                                            <option value='8'>Country</option>
-                                            <option value='9'>Country</option>
-                                            <option value='10'>Country</option>
-                                            <option value='11'>Country</option>
-                                            <option value='12'>Country</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="dates">
-                                    <label class="s2">Language<span class="required">*</span></label>                       
-                                    <div class="select-wrapper mt1 mb1 w100">
-                                        <select name="month" id="month-start-date">
-                                            <option>Select Language</option>
-                                            <option value='1'>Language</option>
-                                            <option value='2'>Language</option>
-                                            <option value='3'>Language</option>
-                                            <option value='4'>Language</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="dates">
-                                    <label class="s2">Budget<span class="required">*</span></label>                       
-                                    <div class="select-wrapper mt1 mb1 w100">
-                                        <select name="month" id="month-start-date">
-                                            <option>Select Budget</option>
-                                            <option value='1'>$10,000 - $100,000</option>
-                                            <option value='2'>Budget</option>
-                                            <option value='3'>Budget</option>
-                                            <option value='4'>Budget</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="dates">
-                                    <label class="s2">Privacy<span class="required">*</span></label>                       
-                                    <div class="select-wrapper mt1 mb1 w100">
-                                        <select name="month" id="month-start-date">
-                                            <option>Select Privacy</option>
-                                            <option value='1'>Private</option>
-                                            <option value='2'>Public</option>
-                                            <option value='3'>none</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="fw">
-                                    <label class="s2">Project Title<span class="required">*</span></label>                       
-                                    <input type="text" id="nih" name="nih" class="nih w100 mt1 mb1" placeholder="">
-                                </div>
-                                <div class="fw">
-                                    <label class="s2">Problem<span class="required">*</span></label>                       
-                                    <textarea id="" class="w100 mt1 mb1" ></textarea>
-                                </div>
-                                <div class="fw">
-                                    <label class="s2">Solution<span class="required">*</span></label>                       
-                                    <textarea id="" class="w100 mt1 mb1" ></textarea>
-                                </div>
-                                <div class="fw">
-                                    <label class="s2">Summary<span class="required">*</span></label>                       
-                                    <textarea id="" class="w100 mt1 mb1" ></textarea>
-                                </div>
-                                <div class="fw attachment">
-                                    Add Attachment
-                                    <div><input type="file" value="Choose File"></div>
-                                    <div>Maximum file size is 5MB</div>
-                                </div>
-                                <div class="fw scope">
-                                    <div>Scope of the project (Technology Readiness Level)</div>
-                                    <div>Select the categories that best defines the scope of your project scope.</div>
-                                    <div class="sc-select" >
-                                        <div>
-                                            <span onclick="showItems(0)">Scientific or technological research<i class="fa fa-angle-down qarrd"></i><i class="fa fa-angle-up qarru"></i></span>
-                                            <div id="q-btn-1" class="q-btn" onclick="selectMenu()">
-                                                <button type='button' id="q-1-1">Study of the problem space<i class="fa fa-check"></i></button>
-                                                <button type='button' id="q-1-2">Theoretical analysis or design of solution<i class="fa fa-check"></i></button>
-                                                <button type='button' id="q-1-3">Lab evaluation of theoretical analysis of results<i class="fa fa-check"></i></button>
-                                            </div>
-                                        </div>
+                                    <h3>Summary</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate eu velit pellentesque bibendum. 
+                                        Integer in ligula cursus, laoreet est eget, pellentesque magna. Ut accumsan leo et aliquet ultrices. Nunc vel 
+                                        tempus dui, eget euismod dolor. Suspendisse vel mi vitae erat dapibus volutpat quis sed diam. Etiam interdum 
+                                        hendrerit aliquet.Lorem ipsum dolor sit amet, consectetur adipiscing elit 
+                                    </p>
 
-                                        <div>
-                                            <span onclick="showItems(1)">Technology or solution development<i class="fa fa-angle-down qarrd"></i><i class="fa fa-angle-up qarru"></i></span>
-                                            <div id="q-btn-2" class="q-btn" onclick="selectMenu()">
-                                                <button type='button' id="q-2-1">Proof of concept of solution components or technological elements<i class="fa fa-check"></i></button>
-                                                <button type='button' id="q-2-2">Validation of first prototype in relevant simulated scenario<i class="fa fa-check"></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="fw chbox startup">
+                                    <h3>Problem</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate eu velit pellentesque bibendum. 
+                                    </p>
+        
+                                    <h3>Solution</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate eu velit pellentesque bibendum. 
+                                    </p>
+        
+                                    <h3>Attachments</h3>
+                                    <p>
+                                        <a href="#">doc.docx</a>
+                                        <a href="#">doc.pdf</a>
+                                        <a href="#">docs.docx</a>
+                                    </p>
+
+                                    <h3>Scope of the project (Technology Readiness Level)</h3>
+                                    <p>Scientific or technological research - Study of the problem space</p>
+
+                                    <div class="chbox startup">
                                         <input type="checkbox" id="startup" name="startup" value="startup">
-                                        <label for="startup" class="step">Is this a start-up project?</label>                                    
-                                </div>
-                                <div class="fw skill">
-                                    Skills
-                                    <div>No skills listed
-                                        <span onclick="showSkillBox()">
-                                            <i class="fa fa-plus"></i>Add skill
-                                        </span>
-                                        <div class="sbox">
-                                            <input type="text" name="addskill" id ="addskill">
-                                            <label for="addskill" onclick="addSkill()">Add</label>
-                                        </div>
-                                        <div class="listed" id="listed">
-                                        </div>
+                                        <label for="startup" class="step">Is this a start-up project?</label> 
+                                    </div>
+
+                                    <div class="listed">
+                                        <h3>Skills</h3>
+                                        <div>PHP5</div>
+                                        <div>SCSS</div>
                                     </div>
                                 </div>
-                            </form>
+            
                         </div>
                     </div>
                     <div class="form-btns">
                         <div><button class="w100">Cancel</button></div>
                         <div>&nbsp;</div>
                         <div><button class="w100">Save</button></div>
-                        <div><button class="w100 continue-btn">Continue</button></div>
+                        <div><button class="w100 complete-btn">Complete</button></div>
 
                     </div>
                 </div>
