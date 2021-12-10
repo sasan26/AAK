@@ -270,10 +270,12 @@ function selectMenu(){
 
 function addSkill(){
     var item = document.getElementById("addskill").value;
-    console.log(item);
     var skill = document.createElement("DIV");
-    skill.innerHTML = item;
-    document.getElementById("listed").appendChild(skill);
+    if(item.length > 1){
+        skill.innerHTML = item;
+        document.getElementById("listed").appendChild(skill);
+    }
+    
 }
 
 function showSkillBox(){
@@ -299,5 +301,29 @@ function showItems(id){
         arr.style.display = "inline-block"
     }
  
+}
+
+function sideMenuToggle(){
+    var ptag = document.getElementById("side-arr");
+    var r_arr = document.querySelector("#side-arr i.fa-angle-right");
+    var l_arr = document.querySelector("#side-arr i.fa-angle-left"); 
+    var dash = document.querySelector("main.dashboard");
+    var menu = document.getElementsByTagName("aside")[0];
+    if(l_arr.style.display == "none"){
+        l_arr.style.display = "inline-block";
+        r_arr.style.display = "none";
+        dash.classList.remove("closed-side-menu");
+        menu.style.visibility = "visible";
+        ptag.classList.remove("arr-show");
+    }
+    else{
+        dash.classList.add("closed-side-menu");
+        menu.style.visibility = "hidden";
+        r_arr.style.display = "inline-block";
+        l_arr.style.display = "none";
+        r_arr.style.visibility = "visible";
+        ptag.style.visibility = "visible";
+        ptag.classList.add("arr-show");
+    }
 }
 

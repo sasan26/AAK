@@ -1032,7 +1032,12 @@ main.dashboard{
     margin-top: 50px;
 }
 
+.closed-side-menu{
+    grid-template-columns: 0 auto !important;
+}
+
 .dashboard aside{
+    border-right: 1px solid var(--blue);
     background-color: var(--white);
     padding-top: 54px;
     display: grid;
@@ -1045,6 +1050,34 @@ main.dashboard{
     /* border: 1px solid red; */
     padding: 10px 1rem 10px 5rem; 
     position: relative;
+}
+
+.dashboard aside .f-item{
+    position: relative;
+}
+#side-arr{
+    position: absolute;
+    border: 1px solid var(--blue);
+    padding: 0px 10px;
+    top: -3px;
+    right: -30px;
+    background-color: var(--white);
+}
+#side-arr i.fa{
+    margin-right: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+#side-arr:hover{
+    cursor: pointer;
+}
+
+#side-arr i.fa-angle-right{
+    display: none;
+}
+.arr-show{
+    top: -3px !important;
+    right: 184px !important;
 }
 
 .dashboard aside .active-menu{
@@ -2123,7 +2156,7 @@ color: var(--blue);
 
 .proj-create .skill .sbox {
     position: relative;
-    width: 260px;
+    width: 230px;
     margin-top: 10px;
     display: none;
 }
@@ -2311,6 +2344,16 @@ color: var(--blue);
     font-size: 150px;
     color: var(--green) !important;
 }
+
+.proj-create .q-btn button:hover,
+.proj-create .sc-select span:hover,
+.proj-create .skill span:hover,
+.proj-create .sbox label:hover{
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
 
 
 
