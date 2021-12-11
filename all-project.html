@@ -3,6 +3,7 @@
   <title>AAK | All Projects</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="include/include.js"></script>
   <script src="index.js"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,147 +13,11 @@
     <div class="container-full">
                 
         <!-- header -->
-        <header>
-            <div class="header-dashboard w100">                
-                <div class="dash-logo"><img src="img/aak-logo.png"></div>
-                <div>&nbsp;</div>
-                <div class="dash-top-menu">
-                    <div id="menu1" class="menu2" onmouseout="">
-                        <span class="active">Explore<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></span>
-                        <div class="sub-menu">
-                            <button id="project" onmouseover="subMenu('project-submenu','post-submenu','page-submenu','project-on','post-on','page-on','menu-border','menu-border-bottom',0)">All Projects<i class="fa fa-angle-right"></i></button>
-                            <div class="project-sub-menu w200" id="project-submenu">
-                                <button class="w200">Public Projects</button>
-                                <button class="w200">Connection's Projects</button>
-                            </div>
-                            
-                            <button id="post" onmouseover="subMenu('post-submenu','project-submenu','page-submenu','post-on','project-on','page-on','menu-border-bottom','menu-border',0)">All Posts<i class="fa fa-angle-right"></i></button>
-                            <div class="post-sub-menu w200" id="post-submenu">
-                                <button class="w200">Public Posts</button>
-                                <button class="w200">Connection's Posts</button>
-                            </div>
-                            <button id="page" onmouseover="subMenu('page-submenu','project-submenu','post-submenu','page-on','project-on','post-on','menu-border-bottom','menu-border',0)">All Pages<i class="fa fa-angle-right"></i></button>
-                            <div class="page-sub-menu w200" id="page-submenu">
-                                <button class="w200">Public Pages</button>
-                                <button class="w200">Connection's Pages</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="menu2" class="menu2" onmouseover="hideSubmenu()">
-                        Resources<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i>
-                        <div class="sub-menu">
-                            <button>News</button>
-                            <button>Events</button>
-                            <button>Careers</button>
-                            <button>Opportunities</button>
-                        </div>
-                    </div>
-
-                    <div id="menu3" class="menu2" onmouseout="">
-                        Database<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i>
-                        <div class="sub-menu w200">
-                            <button id="eu" class="w200" onmouseover="subMenu('eu-submenu','us-submenu','ins-submenu','eu-on','us-on','ins-on','menu-border','menu-border-bottom',2)">EU Database<i class="fa fa-angle-right"></i></button>
-                            <div class="eu-sub-menu w200" id="eu-submenu">
-                                <button class="w200">EU Patents</button>
-                                <button class="w200">EU Grants</button>
-                                <button class="w200">EU Funding Tenders</button>
-                                <button class="w200">EU Projects Database</button>
-                            </div>
-                            
-                            <button id="us" class="w200"  onmouseover="subMenu('us-submenu','eu-submenu','ins-submenu','us-on','eu-on','ins-on','menu-border-bottom','menu-border',2)">US Database<i class="fa fa-angle-right"></i></button>
-                            <div class="us-sub-menu w200" id="us-submenu">
-                                <button class="w200">US Patents</button>
-                                <button class="w200">US Grants</button>
-                                <button class="w200">US Projects Database</button>
-                            </div>
-                            <button id="ins" class="w200"  onmouseover="subMenu('ins-submenu','us-submenu','eu-submenu','ins-on','us-on','eu-on','menu-border-bottom','menu-border',2)">Institutions<i class="fa fa-angle-right"></i></button>
-                            <div class="ins-sub-menu w200" id="ins-submenu">
-                                <button class="w200">Private Institutions</button>
-                                <button class="w200">Public Institutions</button>
-                                <button class="w200">Research Institutions</button>
-                                <button class="w200">Other Institutions</button>
-                            </div>
-                            
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="search-bar">
-                    <input type="text" class="">
-                    <i class="fa fa-search"></i>
-                </div>                    
-                <div class="topright-menu">
-                    <div>
-                        <i class="fa fa-bell"></i>
-                        <div class="popup">Notifications</div>
-                    </div>
-                    <div>
-                        <i class="fa fa-envelope"></i>
-                        <div class="popup">Inbox</div>
-                    </div>
-                    <div>
-                        <i class="fa fa-bars" onclick="showMenu()"></i>
-                        <div class="popup">Main Menu</div>
-                        <div class="mainmenu" id="mainmenu">
-                            <h3>Menu</h3>
-                            <i class="fa fa-close" onclick="hideMenu()"></i>
-                            <div class="menu-con">
-                                <div>
-                                    <div class="userinfo">
-                                        <img src="img/user-avatar.png">
-                                        <span>Ansam Abdulkareem</span>
-                                        <div>UX Designer</div>
-                                    </div>
-                                    <div><hr></div>
-                                    <div><button>Investores</button></div>
-                                    <div><button>Change user type</button></div>
-                                    <div><button>Settings</button></div>
-                                    <div><button>Log Out</button></div>
-                                </div>
-                                <div>
-                                    <div>Social</div>
-                                    <div><button>Events</button></div>
-                                    <div><button>Connections</button></div>
-                                    <div><button>AAK Connect</button></div>
-                                    <div><button>AAK Members</button></div>
-                                    <div><button>Pages</button></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </header>
+        <header class="proj-active" sasan="include/header.html"></header>
         
         <main class="dashboard">
-            <aside>
-                <div><img src="img/user-avatar.png" onclick="pic()"></div>
-                <div><div class="user-info">
-                    <p>Welcome!</p>
-                    <p>
-                        Ansam Abdulkareem
-                        <span>
-                            <button onclick="info()"><i class="fa fa-pencil"></i></button>
-                        </span>
-                    </p>
-                    <p>MicroBio Researcher in</p>
-                    <p>Science company</p>
-                    <p>Livermore, CA</p>
-                </div></div>
-                <div><div class="valign">Home</div></div>
-                <div><div class="valign">Analytics</div></div>
-                <div><div class="valign">Collaborators</div></div>
-                <div><div class="valign">My Projects</div></div>
-                <div><div class="valign">Researcher Profile</div></div>
-                <div><div class="valign">Update scientific profile</div></div>
-                <div><div class="valign">My Posts</div></div>
-                <div><div class="valign">My Pages</div></div>
-                <div><div class="valign">Activity</div></div>
-                <div><div class="valign">Documents</div></div>
-            </aside>
+            <!-- side menu -->
+            <aside sasan="include/side-menu.html"></aside>
 
             <article class="proj-con"> 
                 <div class="title">
@@ -749,49 +614,18 @@
 
                 </div> <!-- /pbox -->
 
+                 <!-- user info -->
+                 <div class="modal-frame" id="info" sasan="include/user-info.html"></div>            
+                 <!-- Profile Photo -->
+                 <div class="modal-frame" id="mpic" sasan="include/user-pic.html"></div>
             </article>
-
         </main>
 
         <!-- footer -->
-        <footer>
-            <div class="top">
-                <div class="left">
-                    <img src="img/aak-logo.png" alt="AAK logo">
-                    <p>AAK Tele-Science is a global collaborative platform.</p>
-                </div>
-                <div class="right">
-                    <div class="f1 f-title">Inside AAk</div>
-                    <div class="f2 f-title">Follow Us</div>
-                    <div class="f3 f-title">Contact Us</div>
-                    <div class="f4">Teams</div>
-                    <div class="f5"><i class="fa fa-linkedin"></i>LinkedIn</div>
-                    <div class="f6"><i class="fa fa-envelope"></i>Email</div>
-                    <div class="f7">Careers</div>
-                    <div class="f8"><i class="fa fa-facebook"></i>Facebook</div>
-                    <div class="f9"><i class="fa fa-phone"></i>Phone (Hotline)</div>
-                    <div class="f10">About Us</div>
-                    <div class="f11"><i class="fa fa-twitter"></i>Twitter</div>
-                    <div class="f12"><i class="fa fa-map-marker"></i>Address</div>
-                </div>
-            </div>
+        <footer sasan="include/footer.html"></footer>
 
-
-            <div class="middle">
-                <div>2021 AAk Tele-Science</div>
-                <div>Terms of Service</div>
-                <div>Privacy Policy</div>
-                <div>Cookies Policy</div>
-                <div>Accessibility Certificate</div>
-                <div>California Privacy Policy</div>
-            </div>
-
-            <div class="bottom">
-                <p>@2021 AAK Tele-Science</p>
-            </div>
-
-        </footer>
     </div> <!-- /container -->
-
+    
+<script>loadParts(); </script> <!-- load external html files -->
 </body>
 </html>

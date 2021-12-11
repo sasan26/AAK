@@ -4,6 +4,7 @@
   <title>AAK | Login</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="include/include.js"></script>
   <script src="index.js"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,16 +15,7 @@
                 
         <!-- header -->
         <header>
-            <div class="header">
-                <ul>
-                    <li><a href="#">Signup</a></li>
-                    <li><a class="active" href="#">Login</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Teams</a></li>
-                </ul>
-                <img src="img/aak-logo.png" class="logo-top">
-            </div>
+            <div class="header login" sasan="include/header-login.html"></div>
             <div class="hero-empty">
                 <div class="b2"></div>
                 <div class="caption">                   
@@ -35,15 +27,12 @@
         
         <main class="contactus">
              
-            <div class="row-login">
-                
-
+            <div class="row-login">                
                 <div class="loginform">
                     <form>                        
                         <div class="box"> 
 
-                            <input type="text" id="fname" class="w80" name="fname" placeholder="Enter Username"> 
-                            
+                            <input type="text" id="fname" class="w80" name="fname" placeholder="Enter Username">                            
                             <div class="forgot-link w80">
                                 <input type="password" id="fname" class="w100" name="fname" placeholder="Enter Password"> 
                                 <a href="#">Forgot Your Password?</a>
@@ -59,45 +48,10 @@
         </main>
 
         <!-- footer -->
-        <footer>
-            <div class="top">
-                <div class="left">
-                    <img src="img/aak-logo.png" alt="AAK logo">
-                    <p>AAK Tele-Science is a global collaborative platform.</p>
-                </div>
-                <div class="right">
-                    <div class="f1 f-title">Inside AAk</div>
-                    <div class="f2 f-title">Follow Us</div>
-                    <div class="f3 f-title">Contact Us</div>
-                    <div class="f4">Teams</div>
-                    <div class="f5"><i class="fa fa-linkedin"></i>LinkedIn</div>
-                    <div class="f6"><i class="fa fa-envelope"></i>Email</div>
-                    <div class="f7">Careers</div>
-                    <div class="f8"><i class="fa fa-facebook"></i>Facebook</div>
-                    <div class="f9"><i class="fa fa-phone"></i>Phone (Hotline)</div>
-                    <div class="f10">About Us</div>
-                    <div class="f11"><i class="fa fa-twitter"></i>Twitter</div>
-                    <div class="f12"><i class="fa fa-map-marker"></i>Address</div>
-                </div>
-            </div>
-
-
-            <div class="middle">
-                <div>2021 AAk Tele-Science</div>
-                <div>Terms of Service</div>
-                <div>Privacy Policy</div>
-                <div>Cookies Policy</div>
-                <div>Accessibility Certificate</div>
-                <div>California Privacy Policy</div>
-            </div>
-
-            <div class="bottom">
-                <p>@2021 AAK Tele-Science</p>
-            </div>
-
-        </footer>
+        <footer sasan="include/footer.html"></footer>
     </div> <!-- /container -->
 
+<script>loadParts(); </script> <!-- load external html files -->
 </body>
 </html>
 

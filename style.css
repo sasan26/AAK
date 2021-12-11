@@ -64,14 +64,9 @@ body{
 .header {
     font-family: Roboto;
     font-size: 18px;   
-    /* position: fixed;
-    top:0;
-    left:0;
-    width:100%;    */
 }
 
-header {
-  
+header {  
     position: fixed;
     top:0;
     left:0;
@@ -84,6 +79,11 @@ header {
     position: absolute;
     top: 15px;
     left: 8%;
+}
+
+aside a{
+    text-decoration: none;
+    color: var(--black);
 }
 
 .header ul {
@@ -111,11 +111,14 @@ header {
     text-decoration: underline;
 }
 
-.header .active{
+.header.login .login,
+.header.contact .contact,
+.header.signup .signup,
+.header.about .about,
+.header.team .team{
     font-weight: 600;
     text-decoration: underline;
-    cursor: default;
-    
+    cursor: default;  
 }
 
 .row{
@@ -125,7 +128,6 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
 
 .row p{
@@ -138,7 +140,6 @@ header {
     display: grid;
     grid-template-columns: 50% 40%;
     grid-gap: 20px 150px;
-
 }
 
 .forms > div{
@@ -559,13 +560,13 @@ footer i.fa{
 footer .middle{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
-    padding: 2rem auto;
+    padding: 2rem 0;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 400;
     justify-content: center;
-    grid-gap: 0 4rem;
+    grid-gap: 0 2rem;
 }
 
 /* bottom footer */
@@ -961,8 +962,8 @@ header {
     top: 24px;
     left: -50px;
 }
-.dash-top-menu .menu2 span.active,
-.dash-top-menu .menu2 span.active i.fa{
+.proj-active .dash-top-menu .menu2 span.active,
+.proj-active .dash-top-menu .menu2 span.active i.fa{
     color: var(--blue) !important;
 }
 
@@ -1102,7 +1103,6 @@ main.dashboard{
     display: none;
 }
 .arr-show{
-    top: -3px !important;
     right: 184px !important;
 }
 

@@ -1,46 +1,5 @@
-// let modal = document.getElementById("mabout");
-
-var about = document.getElementById("about-btn");
-
-// var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-
-function info() {
-    var modal = document.getElementById("info");
-    modal.style.display = "block";
-    console.log("user info");
-}
-
-function aboutme() {
-    var modal = document.getElementById("mabout");
-    modal.style.display = "block";
-    console.log("About me");
-}
-
-function exprience() {
-    var modal = document.getElementById("mexp");
-    modal.style.display = "block";
-    console.log("Experience");
-}
-
-function skill() {
-    var modal = document.getElementById("mski");
-    modal.style.display = "block";
-}
-
-function education() {
-    var modal = document.getElementById("medu");
-    modal.style.display = "block";
-}
-
-function contact() {
-    var modal = document.getElementById("mcon");
-    modal.style.display = "block";
-}
-
-function pic() {
-    var modal = document.getElementById("mpic");
+function modalOn(id){
+    var modal = document.getElementById(id);
     modal.style.display = "block";
 }
 
@@ -63,9 +22,8 @@ function subMenu(id1,id2,id3,add,rm1,rm2,badd,brm,num){
     mborder.classList.remove(brm);
 }
 
-
-
 function hideSubmenu(){
+    // var subs = ["project-on", "post-on", "page-on", "eu-on", "us-on", "ins-on", "menu-border", "menu-border-bottom", "menu-border", "menu-border-bottom"];
     var subMenu = document.getElementById("project-submenu");
     var subMenu2 = document.getElementById("post-submenu");
     var subMenu3 = document.getElementById("page-submenu");
@@ -96,8 +54,6 @@ function hideMenu(){
     menu.style.display = "none";
 }
 
-
-
 function play() { 
     var video = document.getElementById("hero-video"); 
     if (video.paused) {
@@ -123,11 +79,6 @@ function muteVideo() {
     }   
 }
 
-// function hideCookie(){
-//     var cookie = document.getElementById("cookie");
-//     cookie.style.display = "none";
-// }
-
 function acceptCookie(){
     var cookie = document.getElementById("cookie");
     cookie.style.display = "none";
@@ -147,18 +98,6 @@ function getCookie(){
     console.log(cookieAAK);
 }
 
-
-// function projMenuShow(){
-//     var submenu = document.getElementById("pmenu");
-//     if( submenu.style.display == "block" ){
-//         submenu.style.display = "none"
-//     }
-//     else{
-//         submenu.style.display = "block"
-//     }
-    
-// }
-
 function projMenuShow(id){
     var submenu = document.getElementsByClassName("pmenu")[id];
     if( submenu.style.display == "block" ){
@@ -166,8 +105,7 @@ function projMenuShow(id){
     }
     else{
         submenu.style.display = "block"
-    }
-    
+    }  
 }
 
 function subfilter(){
@@ -197,10 +135,8 @@ function filterToggle(id){
         filter.style.display = "none";
         down.style.display = "inline";
         up.style.display = "none";
-
     }
-    else{
-        
+    else{       
         for( var i = 0; i< filters.length; i++){
             var subfilter = document.getElementById(filters[i]);
             var upArr = document.querySelector("."+filters[i]+" .fa-angle-up");
@@ -213,8 +149,7 @@ function filterToggle(id){
         }
         filter.style.display = "block";
         up.style.display = "inline";
-        down.style.display = "none";
-        
+        down.style.display = "none";       
     }
 }
 
