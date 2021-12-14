@@ -262,3 +262,24 @@ function sideMenuToggle(){
     }
 }
 
+function mobMenu(){
+    var open = document.querySelector(".mobile-menu .fa-window-close");
+    var close = document.querySelector(".mobile-menu .fa-bars");
+    
+    if(close.style.display != "none"){
+        close.style.display = "none";
+        open.style.display = "block";
+    }
+    else{
+        open.style.display = "none";
+        close.style.display = "block";
+    }
+}
+
+function showFullProject(id){
+    var p = document.getElementsByClassName("panel-proj")[id];
+    var panel = document.getElementsByClassName("modal-panel")[id];
+    p.classList.toggle("proj-toggle");
+    panel.classList.toggle("proj-toggle");
+}
+

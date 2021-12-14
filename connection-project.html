@@ -28,7 +28,83 @@
                         <input type="text" class="w100" placeholder="Search projects">
                         <i class="fa fa-search"></i>
                     </div>
-                    <div><button>Create Project</button></div>
+                    <!-- <div><button>Create Project</button></div> -->
+                    <!-- <div>
+                        <button onclick="subfilter()">Filter</button>
+                        <div class="sub-filter" id="sub-filter">
+                            <div>Year: 2021<i class="fa fa-close"></i></div>
+                            <div>Location: USA<i class="fa fa-close"></i></div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="bar-filter">
+                    <div class="filter">
+                        <div>Sort by:</div>
+                        <div onclick="filterToggle('year-menu')">
+                            Year
+                            <span class="year-menu">
+                                <i class="fa fa-angle-down"></i>
+                                <i class="fa fa-angle-up"></i>
+                            </span>
+                            <div class="sub-menu" id="year-menu">
+                                <div>2021</div>
+                                <div>2020</div>
+                                <div>2019</div>
+                                <div>2018</div>
+                                <div>2017</div>
+                                <div>2016</div>
+                            </div>
+                        </div>
+                        <div onclick="filterToggle('location-menu')">
+                            Location
+                            <span class="location-menu">
+                                <i class="fa fa-angle-down"></i>
+                                <i class="fa fa-angle-up"></i>
+                            </span>
+                            <div class="sub-menu" id="location-menu">
+                                <div>A-Z</div>
+                                <div>Z-A</div>
+                                <div class="border-top-filter">Country</div>
+                                <div>Country</div>
+                                <div>Country</div>
+                                <div>Country</div>
+                                <div>Country</div>
+                            </div>
+                        </div>
+                        <div onclick="filterToggle('category-menu')">
+                            Category
+                            <span class="category-menu">
+                                <i class="fa fa-angle-down"></i>
+                                <i class="fa fa-angle-up"></i>
+                            </span>
+                            <div class="sub-menu" id="category-menu">
+                                <div>A-Z</div>
+                                <div>Z-A</div>
+                                <div class="border-top-filter">category</div>
+                                <div>category</div>
+                                <div>category</div>
+                                <div>category</div>
+                                <div>category</div>
+                            </div>
+                        </div>
+                        <div onclick="filterToggle('lang-menu')">
+                            Language
+                            <span class="lang-menu">
+                                <i class="fa fa-angle-down"></i>
+                                <i class="fa fa-angle-up"></i>
+                            </span>
+                            <div class="sub-menu" id="lang-menu">
+                                <div>A-Z</div>
+                                <div>Z-A</div>
+                                <div class="border-top-filter">Language</div>
+                                <div>Language</div>
+                                <div>Language</div>
+                                <div>Language</div>
+                                <div>Language</div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div>
                         <button onclick="subfilter()">Filter</button>
                         <div class="sub-filter" id="sub-filter">
@@ -36,94 +112,31 @@
                             <div>Location: USA<i class="fa fa-close"></i></div>
                         </div>
                     </div>
+
                 </div>
-                <div class="filter">
-                    <div>Sort by:</div>
-                    <div onclick="filterToggle('year-menu')">
-                        Year
-                        <span class="year-menu">
-                            <i class="fa fa-angle-down"></i>
-                            <i class="fa fa-angle-up"></i>
-                        </span>
-                        <div class="sub-menu" id="year-menu">
-                            <div>2021</div>
-                            <div>2020</div>
-                            <div>2019</div>
-                            <div>2018</div>
-                            <div>2017</div>
-                            <div>2016</div>
-                        </div>
-                    </div>
-                    <div onclick="filterToggle('location-menu')">
-                        Location
-                        <span class="location-menu">
-                            <i class="fa fa-angle-down"></i>
-                            <i class="fa fa-angle-up"></i>
-                        </span>
-                        <div class="sub-menu" id="location-menu">
-                            <div>A-Z</div>
-                            <div>Z-A</div>
-                            <div class="border-top-filter">Country</div>
-                            <div>Country</div>
-                            <div>Country</div>
-                            <div>Country</div>
-                            <div>Country</div>
-                        </div>
-                    </div>
-                    <div onclick="filterToggle('category-menu')">
-                        Category
-                        <span class="category-menu">
-                            <i class="fa fa-angle-down"></i>
-                            <i class="fa fa-angle-up"></i>
-                        </span>
-                        <div class="sub-menu" id="category-menu">
-                            <div>A-Z</div>
-                            <div>Z-A</div>
-                            <div class="border-top-filter">category</div>
-                            <div>category</div>
-                            <div>category</div>
-                            <div>category</div>
-                            <div>category</div>
-                        </div>
-                    </div>
-                    <div onclick="filterToggle('lang-menu')">
-                        Language
-                        <span class="lang-menu">
-                            <i class="fa fa-angle-down"></i>
-                            <i class="fa fa-angle-up"></i>
-                        </span>
-                        <div class="sub-menu" id="lang-menu">
-                            <div>A-Z</div>
-                            <div>Z-A</div>
-                            <div class="border-top-filter">Language</div>
-                            <div>Language</div>
-                            <div>Language</div>
-                            <div>Language</div>
-                            <div>Language</div>
-                        </div>
-                    </div>
-                </div>
+                
 
                 <!-- Project Box -->
-                <div class="pbox">
+                <div class="pbox first-box">
                     <div class="header-proj">
                         <div >
                             <img class="h-user" src="img/p1.png">                           
                         </div>
-                        <div class="ul" onclick="expandBox(0)">DATA Structure<i class="fa fa-angle-down down-arr"></i><i class="fa fa-angle-up up-arr"></i></div>
+                        <div class="ul" onclick="showFullProject(0)">DATA Structure
+                            <div>By Aldi Agaj</div>
+                            <span>1 hour ago </span><i class="fa fa-globe"></i>
+                        </div>
                         <div class="ur">
-                            <i class="fa fa-lock"></i>
-                            <span>Closed Project</span>
-                            <i class="fa fa-ellipsis-h" onclick="projMenuShow(0)"></i>
-                            <div class="submenu pmenu" id="pmenu">
-                                <div>View Project</div>
-                                <div>Request Membership</div>
-                                <div>Send Message</div>
-                            </div>
                         </div>
                     </div>
+
                     <div class="body">
-                        <div class="hg">Aldi Agaj | Technology | USA | Public | English | Created 1 hour ago</div>
+                        <div class="c-btns">
+                            <button>Add Connection</button>
+                            <button>Send Message</button>
+                            <button>Send Proposal</button>
+                        </div>
+                        <div class="hg">Technology | &nbsp;<i class="fa fa-map-marker"></i>USA | Public | &nbsp;<i class="fa fa-volume-up"></i>English</div>
                         <div>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate eu velit pellentesque
                              bibendum. Integer in ligula cursus, laoreet est eget, pellentesque magna. Ut accumsan leo et 
@@ -141,22 +154,77 @@
                         <div class="hg">Budget: $5K - $10K USD | January 12, 2021 - April 4, 2021 </div>
                     </div>
 
-                    <div class="footer">
-                        <div>
+                    <div class="footer-c">
+                        <div class="lfooter">
                             <div class="cc">Skills:</div>
-                            <div>AI</div>
-                            <div>data science,</div>
-                            <div>coding,</div>
-                            <div>Python,</div>
-                            <div>Word Press,</div>
+                            <div class="listed">
+                                <div>coding</div>
+                                <div>Python</div>
+                            </div>
                         </div>
-                        <div>
+                        <div class="rfooter">
                             <i class="fa fa-users"></i>
                             10 members
                         </div>
                     </div>
 
-                    <div class="panel">
+                    
+
+                </div> <!-- /pbox -->
+
+                <!-- Project Box -->
+                <!-- <div class="pbox">
+                    <div class="header-proj">
+                        <div >
+                            <img class="h-user" src="img/p2.png">                           
+                        </div>
+                        <div class="ul">Machin Learning
+                            <div>By Omar Alsherbini</div>
+                            <span>18 hour ago </span><i class="fa fa-globe"></i>
+                        </div>
+                        <div class="ur">
+                        </div>
+                    </div>
+
+                    <div class="body">
+                        <div class="c-btns">
+                            <button>Add Connection</button>
+                            <button>Send Message</button>
+                            <button>Send Proposal</button>
+                        </div>
+                        <div class="hg">Technology | &nbsp;<i class="fa fa-map-marker"></i>USA | Public | &nbsp;<i class="fa fa-volume-up"></i>English</div>
+                        <div>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate eu velit pellentesque
+                             bibendum. Integer in ligula cursus, laoreet est eget, pellentesque magna. Ut accumsan leo et 
+                             aliquet ultrices. Nunc vel tempus dui, eget euismod dolor. Suspendisse vel mi vitae erat dapibus 
+                             volutpat quis sed diam. Etiam interdum hendrerit aliquet.Lorem ipsum dolor sit amet, consectetur 
+                             adipiscing elit <span class="a" onclick="showMore(1)">show more</span>
+                        </div>
+
+                        <div class="pb">
+                            lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate eu velit pellentesque
+                            bibendum. Integer in ligula cursus, laoreet est eget, pellentesque magna. Ut accumsan leo et 
+                            aliquet ultrices.  <span class="a" onclick="showMore(1)">show less</span>
+                        </div>
+
+                        <div class="hg">Budget: $5K - $10K USD | January 12, 2021 - April 4, 2021 </div>
+                    </div>
+
+                    <div class="footer-c">
+                        <div class="lfooter">
+                            <div class="cc">Skills:</div>
+                            <div class="listed">
+                                <div>coding</div>
+                                <div>Python</div>
+                            </div>
+                        </div>
+                        <div class="rfooter">
+                            <i class="fa fa-users"></i>
+                            10 members
+                        </div>
+                    </div>
+
+                    <div class="panel-projs">
                         <div class="hg">Aldi Agaj | Technology | USA | Public | English | Created 1 hour ago</div>
                         <div class="timeline">
                             <div>
@@ -271,197 +339,29 @@
                         <div class="end-arr"><i class="fa fa-angle-up" onclick="expandBox(0)"></i></div>
                     </div>
 
-                </div> <!-- /pbox -->
+                </div>  -->
 
-                 <!-- Project Box -->
-                 <div class="pbox">
+                <!-- Project Box -->
+                <!-- <div class="pbox">
                     <div class="header-proj">
                         <div >
-                            <img class="h-user" src="img/p1.png">                           
+                            <img class="h-user" src="img/p2.png">                           
                         </div>
-                        <div class="ul" onclick="expandBox(1)">DATA Structure<i class="fa fa-angle-down down-arr"></i><i class="fa fa-angle-up up-arr"></i></div>
+                        <div class="ul">Machin Learning
+                            <div>By Omar Alsherbini</div>
+                            <span>18 hour ago </span><i class="fa fa-globe"></i>
+                        </div>
                         <div class="ur">
-                            <i class="fa fa-lock"></i>
-                            <span>Closed Project</span>
-                            <i class="fa fa-ellipsis-h" onclick="projMenuShow(1)"></i>
-                            <div class="submenu pmenu" id="pmenu">
-                                <div>View Project</div>
-                                <div>Request Membership</div>
-                                <div>Send Message</div>
-                            </div>
                         </div>
                     </div>
+
                     <div class="body">
-                        <div class="hg">Aldi Agaj | Technology | USA | Public | English | Created 1 hour ago</div>
-                        <div>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate eu velit pellentesque
-                             bibendum. Integer in ligula cursus, laoreet est eget, pellentesque magna. Ut accumsan leo et 
-                             aliquet ultrices. Nunc vel tempus dui, eget euismod dolor. Suspendisse vel mi vitae erat dapibus 
-                             volutpat quis sed diam. Etiam interdum hendrerit aliquet.Lorem ipsum dolor sit amet, consectetur 
-                             adipiscing elit <span class="a" onclick="showMore(1)">show more</span>
+                        <div class="c-btns">
+                            <button>Add Connection</button>
+                            <button>Send Message</button>
+                            <button>Send Proposal</button>
                         </div>
-
-                        <div class="pb">
-                            lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate eu velit pellentesque
-                            bibendum. Integer in ligula cursus, laoreet est eget, pellentesque magna. Ut accumsan leo et 
-                            aliquet ultrices.  <span class="a" onclick="showMore(1)">show less</span>
-                        </div>
-
-                        <div class="hg">Budget: $5K - $10K USD | January 12, 2021 - April 4, 2021 </div>
-                    </div>
-
-                    <div class="footer">
-                        <div>
-                            <div class="cc">Skills:</div>
-                            <div>AI</div>
-                            <div>data science,</div>
-                            <div>coding,</div>
-                            <div>Python,</div>
-                            <div>Word Press,</div>
-                        </div>
-                        <div>
-                            <i class="fa fa-users"></i>
-                            10 members
-                        </div>
-                    </div>
-
-                    <div class="panel">
-                        <div class="hg">Aldi Agaj | Technology | USA | Public | English | Created 1 hour ago</div>
-                        <div class="timeline">
-                            <div>
-                                <h3>Timeline</h3>
-                                <p>January 1, 2021 - December 31, 2021</p>
-                            </div>
-                            <div>
-                                <h3>Budget</h3>
-                                <p>$5K - $10K USD</p>
-                            </div>
-                        </div>
-                        <div>
-                            <h3>Problem</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate eu velit pellentesque bibendum. 
-                            </p>
-
-                            <h3>Solution</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate eu velit pellentesque bibendum. 
-                            </p>
-
-                            <h3>Summary</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate eu velit pellentesque bibendum. 
-                                Integer in ligula cursus, laoreet est eget, pellentesque magna. Ut accumsan leo et aliquet ultrices. Nunc vel 
-                                tempus dui, eget euismod dolor. Suspendisse vel mi vitae erat dapibus volutpat quis sed diam. Etiam interdum 
-                                hendrerit aliquet.Lorem ipsum dolor sit amet, consectetur adipiscing elit 
-                            </p>
-
-                            <h3>Members(<span>10</span>)</h3>
-                            <p>
-                                <span>John Doe, </span> 
-                                <span>John Doe, </span>
-                                <span>John Doe, </span>
-                                <span>John Doe, </span>
-                                <span>John Doe, </span>
-                                <span>John Doe, </span>
-                                <span>John Doe, </span>
-                                <span>John Doe, </span>
-                                <span>John Doe, </span>
-                                <span>John Doe </span>
-                            </p>
-
-                            <h3>Skills</h3>
-                            <p class="skill">
-                                <span>Al</span>
-                                <span>HTML5</span>
-                                <span>SASS</span>
-                                <span>PHP</span>
-                            </p>
-
-                            <h3>Attachments</h3>
-                            <p>
-                                <a href="#">doc.docx</a>
-                                <a href="#">doc.pdf</a>
-                                <a href="#">docs.docx</a>
-                            </p>
-                        </div>
-                        <div class="discussion">
-                            <h3>Discussion</h3>
-                            <div>
-                                <div class="user">
-                                    <div><img src="img/p1.png"></div>
-                                    <div class="info">
-                                        <div>Aldi Agaj | <span class="proj-owner">Owner</span></div>
-                                        <div>Posted 23 minutes ago </div>
-                                    </div>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate eu velit pellentesque bibendum. 
-                                    Integer in ligula cursus, laoreet est eget, pellentesque magna.
-                                </p>
-                                <hr>
-                            </div>
-
-                            <div>
-                                <div class="user">
-                                    <div><img src="img/p2.png"></div>
-                                    <div class="info">
-                                        <div>Omar Alsherbini | <span>Member</span></div>
-                                        <div>Posted 1 hour ago</div>
-                                    </div>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate eu velit pellentesque bibendum. 
-                                </p>
-                                <hr>
-                            </div>
-
-                            <div>
-                                <div class="user">
-                                    <div><img src="img/p2.png"></div>
-                                    <div class="info">
-                                        <div>Omar Alsherbini | <span>Member</span></div>
-                                        <div>Posted 1 hour ago</div>
-                                    </div>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate eu velit pellentesque bibendum. 
-                                </p>
-                                <hr>
-                            </div>
-
-                        </div>
-                        <div>
-                            <form>
-                                <input type="text" class="w100" placeholder="Comment">
-                                <label>send</label>
-                            </form>
-                        </div>
-                        <div class="end-arr"><i class="fa fa-angle-up" onclick="expandBox(1)"></i></div>
-                    </div>
-
-                </div> <!-- /pbox -->
-
-                 <!-- Project Box -->
-                 <div class="pbox">
-                    <div class="header-proj">
-                        <div >
-                            <img class="h-user" src="img/p1.png">                           
-                        </div>
-                        <div class="ul" onclick="expandBox(2)">DATA Structure<i class="fa fa-angle-down down-arr"></i><i class="fa fa-angle-up up-arr"></i></div>
-                        <div class="ur">
-                            <i class="fa fa-lock"></i>
-                            <span>Closed Project</span>
-                            <i class="fa fa-ellipsis-h" onclick="projMenuShow(2)"></i>
-                            <div class="submenu pmenu" id="pmenu">
-                                <div>View Project</div>
-                                <div>Request Membership</div>
-                                <div>Send Message</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="body">
-                        <div class="hg">Aldi Agaj | Technology | USA | Public | English | Created 1 hour ago</div>
+                        <div class="hg">Technology | &nbsp;<i class="fa fa-map-marker"></i>USA | Public | &nbsp;<i class="fa fa-volume-up"></i>English</div>
                         <div>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate eu velit pellentesque
                              bibendum. Integer in ligula cursus, laoreet est eget, pellentesque magna. Ut accumsan leo et 
@@ -479,22 +379,21 @@
                         <div class="hg">Budget: $5K - $10K USD | January 12, 2021 - April 4, 2021 </div>
                     </div>
 
-                    <div class="footer">
-                        <div>
+                    <div class="footer-c">
+                        <div class="lfooter">
                             <div class="cc">Skills:</div>
-                            <div>AI</div>
-                            <div>data science,</div>
-                            <div>coding,</div>
-                            <div>Python,</div>
-                            <div>Word Press,</div>
+                            <div class="listed">
+                                <div>coding</div>
+                                <div>Python</div>
+                            </div>
                         </div>
-                        <div>
+                        <div class="rfooter">
                             <i class="fa fa-users"></i>
                             10 members
                         </div>
                     </div>
 
-                    <div class="panel">
+                    <div class="panel-projs">
                         <div class="hg">Aldi Agaj | Technology | USA | Public | English | Created 1 hour ago</div>
                         <div class="timeline">
                             <div>
@@ -606,10 +505,10 @@
                                 <label>send</label>
                             </form>
                         </div>
-                        <div class="end-arr"><i class="fa fa-angle-up" onclick="expandBox(2)"></i></div>
+                        <div class="end-arr"><i class="fa fa-angle-up" onclick="expandBox(0)"></i></div>
                     </div>
 
-                </div> <!-- /pbox -->
+                </div>  -->
 
                  <!-- user info -->
                  <div class="modal-frame" id="info" sasan="include/user-info.html"></div>            
@@ -617,6 +516,147 @@
                  <div class="modal-frame" id="mpic" sasan="include/user-pic.html"></div>
             </article>
         </main>
+
+        <div class="connection-proj">
+            <!-- project panel 1 -->
+            <div class="panel-proj pheader">
+                <div class="modal-panel">
+
+                    <div class="header-proj">
+                        <div >
+                            <img class="h-user" src="img/p1.png">                           
+                        </div>
+                        <div class="ul" onclick="showFullProject(0)">DATA Structure
+                            <div>By Aldi Agaj</div>
+                            <span>1 hour ago </span><i class="fa fa-globe"></i>
+                        </div>
+                        <div class="ur">
+                            <i class="fa fa-times-circle" onclick="showFullProject(0)"></i>
+                        </div>
+                    </div>
+
+                    <div class="body">
+                        <div class="c-btns">
+                            <button>Add Connection</button>
+                            <button>Send Message</button>
+                            <button>Send Proposal</button>
+                        </div>
+
+                        <div class="hg">Aldi Agaj | Technology | USA | Public | English | Created 1 hour ago</div>
+                        <div class="timeline">
+                            <div>
+                                <h3>Timeline</h3>
+                                <p>January 1, 2021 - December 31, 2021</p>
+                            </div>
+                            <div>
+                                <h3>Budget</h3>
+                                <p>$5K - $10K USD</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Problem</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate eu velit pellentesque bibendum. 
+                            </p>
+
+                            <h3>Solution</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate eu velit pellentesque bibendum. 
+                            </p>
+
+                            <h3>Summary</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate eu velit pellentesque bibendum. 
+                                Integer in ligula cursus, laoreet est eget, pellentesque magna. Ut accumsan leo et aliquet ultrices. Nunc vel 
+                                tempus dui, eget euismod dolor. Suspendisse vel mi vitae erat dapibus volutpat quis sed diam. Etiam interdum 
+                                hendrerit aliquet.Lorem ipsum dolor sit amet, consectetur adipiscing elit 
+                            </p>
+
+                            <h3>Members(<span>10</span>)</h3>
+                            <p>
+                                <span>John Doe, </span> 
+                                <span>John Doe, </span>
+                                <span>John Doe, </span>
+                                <span>John Doe, </span>
+                                <span>John Doe, </span>
+                                <span>John Doe, </span>
+                                <span>John Doe, </span>
+                                <span>John Doe, </span>
+                                <span>John Doe, </span>
+                                <span>John Doe </span>
+                            </p>
+
+                            <h3>Skills</h3>
+                            <p class="skill">
+                                <span>Al</span>
+                                <span>HTML5</span>
+                                <span>SASS</span>
+                                <span>PHP</span>
+                            </p>
+
+                            <h3>Attachments</h3>
+                            <p>
+                                <a href="#">doc.docx</a>
+                                <a href="#">doc.pdf</a>
+                                <a href="#">docs.docx</a>
+                            </p>
+                        </div>
+                        <div class="discussion">
+                            <h3>Discussion</h3>
+                            <div>
+                                <div class="user">
+                                    <div><img src="img/p1.png"></div>
+                                    <div class="info">
+                                        <div>Aldi Agaj | <span class="proj-owner">Owner</span></div>
+                                        <div>Posted 23 minutes ago </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate eu velit pellentesque bibendum. 
+                                    Integer in ligula cursus, laoreet est eget, pellentesque magna.
+                                </p>
+                                <hr>
+                            </div>
+
+                            <div>
+                                <div class="user">
+                                    <div><img src="img/p2.png"></div>
+                                    <div class="info">
+                                        <div>Omar Alsherbini | <span>Member</span></div>
+                                        <div>Posted 1 hour ago</div>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate eu velit pellentesque bibendum. 
+                                </p>
+                                <hr>
+                            </div>
+
+                            <div>
+                                <div class="user">
+                                    <div><img src="img/p2.png"></div>
+                                    <div class="info">
+                                        <div>Omar Alsherbini | <span>Member</span></div>
+                                        <div>Posted 1 hour ago</div>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate eu velit pellentesque bibendum. 
+                                </p>
+                                <hr>
+                            </div>
+
+                        </div>
+                        <div>
+                            <form>
+                                <input type="text" class="w100" placeholder="Comment">
+                                <label>send</label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- footer -->
         <footer sasan="include/footer.html"></footer>

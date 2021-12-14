@@ -28,7 +28,83 @@
                         <input type="text" class="w100" placeholder="Search projects">
                         <i class="fa fa-search"></i>
                     </div>
-                    <div><button>Create Project</button></div>
+                    <!-- <div><button>Create Project</button></div> -->
+                    <!-- <div>
+                        <button onclick="subfilter()">Filter</button>
+                        <div class="sub-filter" id="sub-filter">
+                            <div>Year: 2021<i class="fa fa-close"></i></div>
+                            <div>Location: USA<i class="fa fa-close"></i></div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="bar-filter">
+                    <div class="filter">
+                        <div>Sort by:</div>
+                        <div onclick="filterToggle('year-menu')">
+                            Year
+                            <span class="year-menu">
+                                <i class="fa fa-angle-down"></i>
+                                <i class="fa fa-angle-up"></i>
+                            </span>
+                            <div class="sub-menu" id="year-menu">
+                                <div>2021</div>
+                                <div>2020</div>
+                                <div>2019</div>
+                                <div>2018</div>
+                                <div>2017</div>
+                                <div>2016</div>
+                            </div>
+                        </div>
+                        <div onclick="filterToggle('location-menu')">
+                            Location
+                            <span class="location-menu">
+                                <i class="fa fa-angle-down"></i>
+                                <i class="fa fa-angle-up"></i>
+                            </span>
+                            <div class="sub-menu" id="location-menu">
+                                <div>A-Z</div>
+                                <div>Z-A</div>
+                                <div class="border-top-filter">Country</div>
+                                <div>Country</div>
+                                <div>Country</div>
+                                <div>Country</div>
+                                <div>Country</div>
+                            </div>
+                        </div>
+                        <div onclick="filterToggle('category-menu')">
+                            Category
+                            <span class="category-menu">
+                                <i class="fa fa-angle-down"></i>
+                                <i class="fa fa-angle-up"></i>
+                            </span>
+                            <div class="sub-menu" id="category-menu">
+                                <div>A-Z</div>
+                                <div>Z-A</div>
+                                <div class="border-top-filter">category</div>
+                                <div>category</div>
+                                <div>category</div>
+                                <div>category</div>
+                                <div>category</div>
+                            </div>
+                        </div>
+                        <div onclick="filterToggle('lang-menu')">
+                            Language
+                            <span class="lang-menu">
+                                <i class="fa fa-angle-down"></i>
+                                <i class="fa fa-angle-up"></i>
+                            </span>
+                            <div class="sub-menu" id="lang-menu">
+                                <div>A-Z</div>
+                                <div>Z-A</div>
+                                <div class="border-top-filter">Language</div>
+                                <div>Language</div>
+                                <div>Language</div>
+                                <div>Language</div>
+                                <div>Language</div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div>
                         <button onclick="subfilter()">Filter</button>
                         <div class="sub-filter" id="sub-filter">
@@ -36,76 +112,11 @@
                             <div>Location: USA<i class="fa fa-close"></i></div>
                         </div>
                     </div>
-                </div>
-                <div class="filter">
-                    <div>Sort by:</div>
-                    <div onclick="filterToggle('year-menu')">
-                        Year
-                        <span class="year-menu">
-                            <i class="fa fa-angle-down"></i>
-                            <i class="fa fa-angle-up"></i>
-                        </span>
-                        <div class="sub-menu" id="year-menu">
-                            <div>2021</div>
-                            <div>2020</div>
-                            <div>2019</div>
-                            <div>2018</div>
-                            <div>2017</div>
-                            <div>2016</div>
-                        </div>
-                    </div>
-                    <div onclick="filterToggle('location-menu')">
-                        Location
-                        <span class="location-menu">
-                            <i class="fa fa-angle-down"></i>
-                            <i class="fa fa-angle-up"></i>
-                        </span>
-                        <div class="sub-menu" id="location-menu">
-                            <div>A-Z</div>
-                            <div>Z-A</div>
-                            <div class="border-top-filter">Country</div>
-                            <div>Country</div>
-                            <div>Country</div>
-                            <div>Country</div>
-                            <div>Country</div>
-                        </div>
-                    </div>
-                    <div onclick="filterToggle('category-menu')">
-                        Category
-                        <span class="category-menu">
-                            <i class="fa fa-angle-down"></i>
-                            <i class="fa fa-angle-up"></i>
-                        </span>
-                        <div class="sub-menu" id="category-menu">
-                            <div>A-Z</div>
-                            <div>Z-A</div>
-                            <div class="border-top-filter">category</div>
-                            <div>category</div>
-                            <div>category</div>
-                            <div>category</div>
-                            <div>category</div>
-                        </div>
-                    </div>
-                    <div onclick="filterToggle('lang-menu')">
-                        Language
-                        <span class="lang-menu">
-                            <i class="fa fa-angle-down"></i>
-                            <i class="fa fa-angle-up"></i>
-                        </span>
-                        <div class="sub-menu" id="lang-menu">
-                            <div>A-Z</div>
-                            <div>Z-A</div>
-                            <div class="border-top-filter">Language</div>
-                            <div>Language</div>
-                            <div>Language</div>
-                            <div>Language</div>
-                            <div>Language</div>
-                        </div>
-                    </div>
+
                 </div>
 
                 <!-- Project Box -->
-                <div class="pbox">
+                <div class="pbox first-box">
                     <div class="header-proj">
                         <div >
                             <img class="h-user" src="img/p1.png">                           
