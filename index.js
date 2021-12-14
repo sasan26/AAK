@@ -265,12 +265,15 @@ function sideMenuToggle(){
 function mobMenu(){
     var open = document.querySelector(".mobile-menu .fa-window-close");
     var close = document.querySelector(".mobile-menu .fa-bars");
+    var menu = document.querySelector(".mobile-menu .mmenu");
     
     if(close.style.display != "none"){
         close.style.display = "none";
         open.style.display = "block";
+        menu.style.display = "block";
     }
     else{
+        menu.style.display = "none";
         open.style.display = "none";
         close.style.display = "block";
     }
