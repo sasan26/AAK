@@ -2681,14 +2681,17 @@ main.about .abox button,
     }
 }
 
-@media only screen and (max-width: 1219px) {
+@media only screen and (max-width: 1219px) and (min-width: 1100px) {
     .header-dashboard {
-        grid-template-columns: 200px auto 370px 210px 120px;
+        grid-template-columns: 180px auto 360px 250px 140px;
         grid-gap: 10px;
     }
     .dash-top-menu {
-        justify-content: flex-end;
         font-size: 18px;
+    }
+    .topright-menu{
+        justify-content: normal;
+        padding-right: 0;
     }
 }
 
@@ -2697,6 +2700,19 @@ main.about .abox button,
 
 
 @media (max-width: 1100px) {
+    .header-dashboard {
+        grid-template-columns: 180px auto 320px 225px 180px;
+        grid-gap: 10px;
+    }
+    .dash-top-menu {
+        font-size: 16px;
+    }
+    .topright-menu {
+        font-size: 16px;
+        justify-content: normal;
+        padding-right: 0;
+    }
+
     .forms{
         grid-template-columns: auto;
     
@@ -3002,6 +3018,58 @@ main.about .abox button,
        font-weight: 700;
        font-size: 20px;
         
+    }
+
+    /* about */
+    header .hero-empty{
+        background-color: var(--white);
+        padding-top: 70px;
+        display: grid;
+        grid-template-columns: auto 60% auto;
+        align-items: center;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    header .hero-empty .caption{
+        font-size: 16px;
+    }
+
+    main.about {
+        padding: 130px 20px 30px;
+    }
+
+    main.about .abox button {
+        margin: 5px auto;
+    }
+
+    main.about .abox > div {
+        grid-template-columns: auto;
+        grid-gap: 0;
+    }
+
+    /* login */
+    .row-login .loginform{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .row-login .loginform button{
+        width: 90%;
+    }
+
+    .row-login .loginform .space{
+        width: 90%;
+        grid-column-gap: 5px;
+    }
+
+    /* sign up */
+    .header.signup ul{
+        display: none;
+    }
+
+    .row-register .forms{
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
 }
