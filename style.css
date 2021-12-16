@@ -1088,7 +1088,7 @@ main.dashboard{
     border: 1px solid var(--blue);
     padding: 0px 10px;
     top: -13px;
-    right: -30px;
+    right: -33px;
     background-color: var(--white);
 }
 #side-arr i.fa{
